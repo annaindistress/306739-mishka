@@ -7,32 +7,38 @@
   <body class="page">
 
     <header class="page__header  main-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="http://placehold.it/85x35" width="85" height="35" alt="Магазин «Мишка»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list  site-list">
-            <li class="site-list__item">
-              <a class="site-list__link">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <input class="site-list__search" type="search" name="" placeholder="Поиск по сайту">
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+      <nav class="main-header__navigation  main-navigation">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item  main-navigation__item--logo">
+            <a class="main-navigation__logo-link" href="index.html">
+              <img class="main-navigation__logo-image" src="http://placehold.it/85x35" width="85" height="35" alt="Магазин «Мишка»">
+            </a>
+            <button class="main-navigation__toggle" type="button">Открыть меню</button>
+          </li>
+
+          <li class="main-navigation__item">
+            <a class="main-navigation__link">Каталог товаров</a>
+          </li>
+
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="form.html">Вязание на заказ</a>
+          </li>
+
+          <li class="main-navigation__item">
+            <form class="main-navigation__search" action="https://echo.htmlacademy.ru" method="get">
+              <input class="main-navigation__search-input" type="search" name="" placeholder="Поиск по сайту">
+              <button class="main-navigation__search-submit" type="submit">Поиск</button>
+            </form>
+          </li>
+
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main class="page__main">
-
       <section class="content-header">
         <h1 class="content-header__title">Вязание на заказ</h1>
       </section>
@@ -89,7 +95,6 @@
           <a class="about-process__btn  btn" href="form.index">Сделать заказ</a>
         </div>
       </section>
-
     </main>
 
     <footer class="page__footer  main-footer">
