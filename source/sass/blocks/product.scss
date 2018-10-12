@@ -1,0 +1,16 @@
+.product {
+  margin-bottom: 30px;
+  padding: 30px;
+  border: 1px solid #ededed;
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+    background-image: #ededed;
+  }
+
+  &__price {
+    padding: 20px 0;
+    border-top: 1px solid #ededed;
+  }
+}

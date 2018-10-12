@@ -1,0 +1,20 @@
+.products-navigation {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    display: block;
+    padding: 30px;
+
+    &--items {
+      background-color: #63d1bb;
+    }
+
+    &--toys {
+      background-color: #56c3b2;
+    }
+  }
+}

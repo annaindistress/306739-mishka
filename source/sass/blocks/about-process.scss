@@ -1,0 +1,23 @@
+.about-process {
+  margin: 0 30px;
+  border: 1px solid #ededed;
+
+  &__title {
+    margin: 30px;
+    padding-left: 50px;
+  }
+
+  &__video {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__text {
+    margin: 30px;
+  }
+
+  &__button {
+    width: calc(100% - 60px);
+    margin: 30px;
+  }
+}
