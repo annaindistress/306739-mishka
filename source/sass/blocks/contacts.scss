@@ -1,0 +1,35 @@
+.contacts {
+  &__title {
+    margin: 30px;
+  }
+
+  &__info {
+    max-width: 100%;
+    margin: 0 30px;
+    margin-bottom: 25px;
+  }
+
+  &__table-cell {
+    &--legend {
+      width: 25%;
+      text-transform: lowercase;
+    }
+  }
+
+  &__map-wrapper {
+    max-height: 457px;
+    margin-bottom: 40px;
+    background-color: #dfdfdf;
+  }
+
+  &__map {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__button {
+    width: auto;
+    display: block;
+    margin: 0 30px;
+  }
+}

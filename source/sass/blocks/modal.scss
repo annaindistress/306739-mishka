@@ -1,0 +1,22 @@
+.modal {
+  width: 100%;
+  padding: 35px 30px;
+  text-align: center;
+  background-color: #ffffff;
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__size-list {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__button {
+    background-color: #63d1bb;
+    border: none;
+  }
+}

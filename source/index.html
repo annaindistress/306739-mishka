@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page">
+  <body class="page  text">
 
     <header class="page__header  main-header  main-header--index">
       <nav class="main-header__navigation  main-navigation">
-        <ul class="main-navigation__list">
+        <ul class="main-navigation__list  text__weight--bold">
           <li class="main-navigation__item  main-navigation__item--logo">
             <a class="main-navigation__logo-link">
               <img class="main-navigation__logo-image" src="http://placehold.it/85x35" width="85" height="35" alt="Магазин «Мишка»">
@@ -17,11 +18,11 @@
           </li>
 
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">Каталог товаров</a>
+            <a class="main-navigation__link  text__color--black" href="catalog.html">Каталог товаров</a>
           </li>
 
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="form.html">Вязание на заказ</a>
+            <a class="main-navigation__link  text__color--black" href="form.html">Вязание на заказ</a>
           </li>
 
           <li class="main-navigation__item">
@@ -32,24 +33,24 @@
           </li>
 
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="#">Корзина: пока пуста</a>
+            <a class="main-navigation__link  text__color--black" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
 
       <section class="main-header__title">
         <h1 class="visually-hidden">Интернет-магазин «Мишка»</h1>
-        <p class="main-header__slogan">Милые штуки ручной работы для дома</p>
+        <p class="main-header__slogan  text__weight--bold  text__color--black  text__size--xxxl  text__height--xl">Милые штуки ручной<br>работы для дома</p>
       </section>
 
       <section class="products-navigation">
         <h2 class="visually-hidden">Наши товары:</h2>
         <ul class="products-navigation__list">
           <li class="products-navigation__item">
-            <a class="products-navigation__link" href=#>Предметы интерьера</a>
+            <a class="products-navigation__link  products-navigation__link--items  text__weight--bold  text__color--white  text__size--xl" href=#>Предметы интерьера</a>
           </li>
           <li class="products-navigation__item">
-            <a class="products-navigation__link" href=#>Детские игрушки</a>
+            <a class="products-navigation__link  products-navigation__link--toys  text__weight--bold  text__color--white  text__size--xl" href=#>Детские игрушки</a>
           </li>
         </ul>
       </section>
@@ -57,32 +58,32 @@
 
     <main>
       <section class="weekly-offer">
-        <h2 class="weekly-offer__title">Вязанные корзинки
-          <span class="weekly-offer__subtitle">Товар недели</span>
+        <h2 class="weekly-offer__title  text__color--black  text__size--xxl  text__height--xl">Вязанные корзинки<br>
+          <span class="weekly-offer__subtitle  text__color--light-green  text__size--m  text__height--m">Товар недели</span>
         </h2>
-        <p class="weekly-offer__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="weekly-offer__product-info">
+        <p class="weekly-offer__description  text__size--s">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="weekly-offer__product-info  text__size--s  text__height--m">
           <tr>
-            <td>Цвет:</td>
-            <td>«Тиффани»/серый</td>
+            <td class="weekly-offer__table-cell  weekly-offer__table-cell--legend">Цвет:</td>
+            <td class="weekly-offer__table-cell">«Тиффани»/серый</td>
           </tr>
           <tr>
-            <td>Диаметр:</td>
-            <td>25 см</td>
+            <td class="weekly-offer__table-cell  weekly-offer__table-cell--legend">Диаметр:</td>
+            <td class="weekly-offer__table-cell">25 см</td>
           </tr>
           <tr>
-            <td>Высота:</td>
-            <td>15 см</td>
+            <td class="weekly-offer__table-cell  weekly-offer__table-cell--legend">Высота:</td>
+            <td class="weekly-offer__table-cell">15 см</td>
           </tr>
         </table>
         <img class="weekly-offer__image" src="http://placehold.it/260x315" width="260" height="315" alt="Товар недели">
-        <p class="weekly-offer__price">Цена: 990 руб.</p>
-        <a class="weekly-offer__button  button" href="#">Заказать</a>
+        <p class="weekly-offer__price  text__weight--bold">Цена: 990 руб.</p>
+        <a class="weekly-offer__button  button  text__weight--bold  text__color--grey  text__height--m" href="#">Заказать</a>
       </section>
 
       <section class="advantages">
-        <h2 class="advantages__title">Коротко о нас:</h2>
-        <ul class="advantages__list">
+        <h2 class="advantages__title  text__color--black  text__size--xxl  text__height--xl">Коротко о нас:</h2>
+        <ul class="advantages__list  text__weight--bold  text__color--black  text__height--m">
           <li class="advantages__item  advantages__item--flower">Экологически чистые материалы</li>
           <li class="advantages__item  advantages__item--money">Скандинавский стиль по российской цене</li>
           <li class="advantages__item  advantages__item--heart">Увеличивает лайки на фотографиях</li>
@@ -93,14 +94,14 @@
       </section>
 
       <section class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
+        <h2 class="reviews__title  text__color--black  text__size--xxl  text__height--xl">Отзывы</h2>
         <div class="reviews__wrapper  slider">
           <div class="reviews__list  slider__list">
             <blockquote class="reviews__item  slider__item">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="reviews__author">
-                <span class="reviews__author-name">Анастасия Красильникова</span>
-                <span class="reviews__author-nickname">@misssssiskras</span>
+              <p class="reviews__text  text__size--s  text__height--xl">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <cite class="reviews__author  text__style--normal">
+                <span class="reviews__author-name  text__weight--bold  text__color--black">Анастасия Красильникова</span>
+                <span class="reviews__author-nickname  text__height--xl">@misssssiskras</span>
               </cite>
             </blockquote>
           </div>
@@ -108,26 +109,28 @@
             <button class="slider__toggle  slider__toggle--prev" type="button">Предыдущий отзыв</button>
             <button class="slider__toggle  slider__toggle--next" type="button">Следующий отзыв</button>
           </div>
-          <a class="reviews__button  button" href="#">Написать</a>
+          <a class="reviews__button  button  text__weight--bold  text__color--grey  text__size--l  text__height--m" href="#">Написать</a>
         </div>
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <table class="contacts__info">
+        <h2 class="contacts__title  text__color--black  text__size--l  text__height--xl">Контакты</h2>
+        <table class="contacts__info  text__size--s  text__height--xl">
           <tr>
-            <td>E-mail:</td>
-            <td><a class="contacts__mailto" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+            <td class="contacts__table-cell  contacts__table-cell--legend">E-mail:</td>
+            <td class="contacts__table-cell"><a class="contacts__mailto" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
           </tr>
           <tr>
-            <td>Адрес:</td>
-            <td>
-              <address>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
+            <td class="contacts__table-cell  contacts__table-cell--legend">Адрес:</td>
+            <td class="contacts__table-cell">
+              <address class="text__style--normal">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
             </td>
           </tr>
         </table>
-        <img class="contacts__map" src="http://placehold.it/320x457" width="320" height="457" alt="Карта проезда">
-        <a class="contacts__button  button" href="#">Напишите нам</a>
+        <div class="contacts__map-wrapper">
+          <img class="contacts__map" src="http://placehold.it/320x457" width="320" height="457" alt="Карта проезда">
+        </div>
+        <a class="contacts__button  button  text__weight--bold  text__size--l  text__height--m  text__color--grey" href="#">Напишите нам</a>
       </section>
     </main>
 
@@ -146,7 +149,7 @@
           </li>
         </ul>
       </section>
-      <div class="main-footer__copyright">Разработано
+      <div class="main-footer__copyright  text__weight--bold  text__color--black  text__size__xl  text__height--s">Разработано
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="main-footer__copyright-logo" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
         </a>
@@ -154,10 +157,10 @@
     </footer>
 
     <section class="page__modal  modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__text">Выберите размер:</p>
+      <h2 class="modal__title  text__color--black  text__size--xxl  text__height--xl">Добавить в корзину</h2>
+      <p class="modal__text  text__size--s text__height--xl">Выберите размер:</p>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <ul class="modal__size-list">
+        <ul class="modal__size-list  text__weight--bold  text__height--xxs">
           <li class="modal__size-item">
             <input class="modal__size-input" type="radio" name="product-size" value="S" id="poduct-size-s" checked>
             <label class="modal__size-label" for="product-size-s">S</label>
@@ -171,7 +174,7 @@
             <label class="modal__size-label" for="product-size-l">L</label>
           </li>
         </ul>
-        <button class="modal__button button" type="submit">Добавить</button>
+        <button class="modal__button button  text__color--white  text__size--m  text__height--xxs" type="submit">Добавить</button>
       </form>
     </section>
 

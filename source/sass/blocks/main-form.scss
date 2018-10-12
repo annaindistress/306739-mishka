@@ -1,0 +1,17 @@
+.main-form {
+  &__fieldset {
+    margin: 0 30px;
+  }
+
+  &__submission-tip {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 15px 30px 25px;
+  }
+
+  &__button {
+    max-width: calc(100% - 60px);
+    margin: 0 30px;
+    background-color: #ffffff;
+  }
+}

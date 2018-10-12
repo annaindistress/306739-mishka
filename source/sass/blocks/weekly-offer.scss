@@ -1,0 +1,26 @@
+.weekly-offer {
+  padding: 0 30px;
+
+  &__product-info {
+    min-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  &__table-cell {
+    padding: 10px 0;
+    border-bottom: 1px solid #ececec;
+
+    &--legend {
+      width: 25%;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__price {
+    text-align: center;
+  }
+}

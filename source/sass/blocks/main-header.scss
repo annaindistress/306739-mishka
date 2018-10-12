@@ -1,0 +1,15 @@
+.main-header {
+  background-color: #ffffff;
+
+  &__title {
+    padding-top: 75px;
+    padding-bottom: 120px;
+    background-color: #fafafa;
+  }
+
+  &__slogan {
+    max-width: 260px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
