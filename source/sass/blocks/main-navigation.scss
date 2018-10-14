@@ -1,11 +1,9 @@
-.main-navigation {
-  &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+.main-navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  &__item {
-    padding: 30px;
-  }
+.main-navigation__item {
+  padding: 30px;
 }

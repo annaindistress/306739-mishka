@@ -1,13 +1,11 @@
-.catalog {
-  &__title {
+.catalog__title {
     padding: 70px 0;
     text-align: center;
     background-color: #f1f1f1;
-  }
+}
 
-  &__list {
-    margin: 0;
-    padding: 30px;
-    list-style: none;
-  }
+.catalog__list {
+  margin: 0;
+  padding: 30px;
+  list-style: none;
 }

@@ -1,12 +1,10 @@
-.order {
-  &__title {
-    padding-top: 75px;
-    padding-bottom: 75px;
-    text-align: center;
-    background-color: #f1f1f1;
-  }
+.order__title {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
 
-  &__description {
-    margin: 25px 30px;
-  }
+.order__description {
+  margin: 25px 30px;
 }
