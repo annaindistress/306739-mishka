@@ -1,14 +1,43 @@
 .main-header {
   background-color: #ffffff;
+}
 
 .main-header__title {
   padding-top: 75px;
   padding-bottom: 120px;
-  background-color: #fafafa;
+  background-color: $bg-grey;
 }
 
 .main-header__slogan {
   max-width: 260px;
   margin: 0 auto;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__title {
+    margin-top: -66px;
+    padding-top: 160px;
+    padding-bottom: 370px;
+  }
+
+  .main-header__slogan {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__navigation {
+    max-width: $desktop-width;
+    margin: 0 auto;
+  }
+
+  .main-header__title {
+    padding-bottom: 345px;
+  }
+
+  .main-header__products-navigation {
+    max-width: $desktop-width;
+    margin: 0 auto;
+  }
 }

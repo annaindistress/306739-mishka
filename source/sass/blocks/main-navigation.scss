@@ -6,4 +6,146 @@
 
 .main-navigation__item {
   padding: 30px;
+  padding-left: 75px;
+  border-bottom: 1px solid rgba($secondary-color, 0.1%);
+
+  &--new {
+    display: none;
+  }
+
+  &--sale {
+    display: none;
+  }
+
+  &--delivery {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .main-navigation__item {
+    padding: 0;
+    padding-top: 22px;
+    padding-bottom: 20px;
+
+    &--logo {
+      flex-grow: 1;
+      order: 1;
+      width: 48%;
+      padding-left: 49px;
+    }
+
+    &--catalog {
+      order: 4;
+      width: 200px;
+      padding-left: 50px;
+      padding-right: 15px;
+      border: none;
+    }
+
+    &--order {
+      order: 5;
+      padding-left: 17px;
+      border: none;
+    }
+
+    &--search {
+      order: 2;
+      width: 83px;
+      border-left: 1px solid rgba($secondary-color, 0.1%);
+      border-right: 1px solid rgba($secondary-color, 0.1%);
+    }
+
+    &--cart {
+      order: 3;
+      width: 315px;
+      padding-top: 35px;
+      padding-left: 82px;
+      padding-bottom: 30px;
+    }
+
+    &--delivery {
+      flex-grow: 1;
+      order: 6;
+      display: inline-block;
+      padding-right: 50px;
+      text-align: right;
+      background-color: none;
+      border: none;
+    }
+  }
+
+  .main-navigation__search-form {
+    display: none;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__list {
+    justify-content: flex-start;
+  }
+
+  .main-navigation__item {
+    &--logo {
+      flex-grow: 1;
+      order: 3;
+      width: 277px;
+      padding-left: 30px;
+    }
+
+    &--catalog {
+      order: 1;
+      width: 235px;
+      padding-top: 35px;
+      padding-right: 0;
+      border-bottom: 1px solid rgba($secondary-color, 0.1%);
+    }
+
+    &--order {
+      order: 2;
+      width: 235px;
+      padding-top: 35px;
+      padding-left: 35px;
+      border-bottom: 1px solid rgba($secondary-color, 0.1%);
+    }
+
+    &--search {
+      order: 4;
+      width: 86px;
+    }
+
+    &--cart {
+      order: 5;
+    }
+
+    &--new {
+      order: 6;
+      display: inline-block;
+      width: 235px;
+      padding-left: 50px;
+      border: none;
+    }
+
+    &--sale {
+      order: 7;
+      display: inline-block;
+      width: 235px;
+      padding-left: 35px;
+      border: none;
+    }
+
+    &--delivery {
+      order: 8;
+    }
+  }
 }

@@ -16,3 +16,24 @@
     background-color: $main-color-dark;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .products-navigation__list {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .products-navigation__item {
+    width: 50%;
+  }
+
+  .products-navigation__link {
+    padding: 35px;
+  }
+
+  .products-navigation__text {
+    display: block;
+    max-width: 150px;
+  }
+}
