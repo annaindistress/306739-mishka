@@ -10,7 +10,7 @@
 
     <header class="page__header  main-header  main-header--index">
       <nav class="main-header__navigation  main-navigation">
-        <ul class="main-navigation__list  text__weight--bold">
+        <ul class="main-navigation__list">
           <li class="main-navigation__item  main-navigation__item--logo">
             <a class="main-navigation__logo-link">
               <img class="main-navigation__logo-image" src="http://placehold.it/85x35" width="85" height="35" alt="Магазин «Мишка»">
@@ -18,24 +18,34 @@
             <button class="main-navigation__toggle" type="button">Открыть меню</button>
           </li>
 
-          <li class="main-navigation__item">
-            <a class="main-navigation__link  text__color--black" href="catalog.html">Каталог товаров</a>
+          <li class="main-navigation__item  main-navigation__item--catalog">
+            <a class="main-navigation__link  text__weight--bold  text__color--black" href="catalog.html">Каталог товаров</a>
           </li>
 
-          <li class="main-navigation__item">
-            <a class="main-navigation__link  text__color--black" href="form.html">Вязание на заказ</a>
+          <li class="main-navigation__item  main-navigation__item--order">
+            <a class="main-navigation__link  text__weight--bold  text__color--black" href="form.html">Вязание на заказ</a>
           </li>
 
-          <li class="main-navigation__item">
+          <li class="main-navigation__item  main-navigation__item--search">
             <form class="main-navigation__search" action="https://echo.htmlacademy.ru" method="get">
               <input class="main-navigation__search-input" type="search" placeholder="Поиск по сайту">
               <button class="main-navigation__search-submit" type="submit">Найти</button>
             </form>
           </li>
 
-          <li class="main-navigation__item">
-            <a class="main-navigation__link  text__color--black" href="#">Корзина: пока пуста</a>
+          <li class="main-navigation__item  main-navigation__item--cart">
+            <a class="main-navigation__link  text__weight--bold  text__color--black" href="#">Корзина: пока пуста</a>
           </li>
+
+          <li class="main-navigation__item  main-navigation__item--new">
+            <a class="main-navigation__link  text__weight--bold  text__color--black" href="#">Новые поступления</a>
+          </li>
+
+          <li class="main-navigation__item  main-navigation__item--sale">
+            <a class="main-navigation__link  text__weight--bold  text__color--black" href="#">Распродажа</a>
+          </li>
+
+          <li class="main-navigation__item  main-navigation__item--delivery  text__size--s">Бесплатная доставка по России</li>
         </ul>
       </nav>
 
