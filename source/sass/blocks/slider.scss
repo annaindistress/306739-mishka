@@ -1,1 +1,8 @@
 /* slider block */
+
+@media (min-width: $tablet-width) {
+  .slider__toggle {
+    max-width: 50%;
+    margin: 0;
+  }
+}

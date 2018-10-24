@@ -13,6 +13,12 @@
   padding: 30px;
 }
 
+.page__reviews {
+  padding: 30px;
+  padding-top: 0;
+  padding-bottom: 50px;
+}
+
 @media (min-width: $tablet-width) {
   .page__weekly-offer {
     padding: 50px;
@@ -26,6 +32,14 @@
     padding-top: 55px;
     padding-bottom: 15px;
   }
+
+  .page__reviews {
+    max-width: 875px;
+    margin: 0 auto;
+    padding: 50px;
+    padding-top: 80px;
+    padding-bottom: 140px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -38,5 +52,13 @@
     padding: 0;
     padding-top: 55px;
     padding-bottom: 20px;
+  }
+
+  .page__reviews {
+    max-width: 1050px;
+    padding: 0;
+    padding-top: 75px;
+    padding-left: 175px;
+    padding-bottom: 180px;
   }
 }
