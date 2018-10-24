@@ -46,12 +46,14 @@
       width: 200px;
       padding-left: 50px;
       padding-right: 15px;
+      font-size: 15px;
       border: none;
     }
 
     &--order {
       order: 5;
       padding-left: 17px;
+      font-size: 15px;
       border: none;
     }
 
@@ -108,6 +110,7 @@
       width: 235px;
       padding-top: 35px;
       padding-right: 0;
+      font-size: 17px;
       border-bottom: 1px solid rgba($secondary-color, 0.1%);
     }
 
@@ -116,6 +119,7 @@
       width: 235px;
       padding-top: 35px;
       padding-left: 35px;
+      font-size: 17px;
       border-bottom: 1px solid rgba($secondary-color, 0.1%);
     }
 
@@ -133,6 +137,7 @@
       display: inline-block;
       width: 235px;
       padding-left: 50px;
+      font-size: 15px;
       border: none;
     }
 
@@ -141,6 +146,7 @@
       display: inline-block;
       width: 235px;
       padding-left: 35px;
+      font-size: 15px;
       border: none;
     }
 

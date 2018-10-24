@@ -17,6 +17,11 @@
   }
 }
 
+.products-navigation__text {
+  display: block;
+  max-width: 110px;
+}
+
 @media (min-width: $tablet-width) {
   .products-navigation__list {
     display: flex;
@@ -33,7 +38,13 @@
   }
 
   .products-navigation__text {
-    display: block;
     max-width: 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products-navigation__list {
+    width: 1050px;
+    margin: 0 auto;
   }
 }

@@ -1,9 +1,19 @@
-.weekly-offer {
-  padding: 0 30px;
+.weekly-offer__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.weekly-offer__subtitle {
+  text-transform: uppercase;
+}
+
+.weekly-offer__description {
+  max-width: 500px;
+  margin-bottom: 25px;
 }
 
 .weekly-offer__product-info {
-  min-width: 100%;
+  width: 100%;
   margin-bottom: 25px;
 }
 
@@ -12,15 +22,110 @@
   border-bottom: 1px solid #ececec;
 
   &--legend {
-    width: 25%;
+    width: 37%;
   }
 }
 
 .weekly-offer__image {
   display: block;
   margin: 0 auto;
+  margin-bottom: 42px;
 }
 
 .weekly-offer__price {
   text-align: center;
+}
+
+.weekly-offer__button {
+  max-width: 290px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .weekly-offer__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+
+  .weekly-offer__subtitle {
+    max-width: 100px;
+    margin-right: 25px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .weekly-offer__container {
+    position: relative;
+  }
+
+  .weekly-offer__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .weekly-offer__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50%;
+  }
+
+  .weekly-offer__product-info {
+    margin-bottom: 50px;
+  }
+
+  .weekly-offer__image {
+    position: absolute;
+    top: 18px;
+    right: -100%;
+  }
+
+  .weekly-offer__price {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .weekly-offer__button {
+    width: 290px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .weekly-offer__title {
+    justify-content: flex-start;
+    width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .weekly-offer__subtitle {
+    order: -1;
+    display: block;
+    margin-left: 33px;
+    margin-right: 42px;
+  }
+
+  .weekly-offer__container {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-left: 175px;
+    padding-right: 525px;
+  }
+
+  .weekly-offer__description {
+    margin-bottom: 60px;
+  }
+
+  .weekly-offer__product-info {
+    margin-bottom: 110px;
+  }
+
+  .weekly-offer__image {
+    top: -170px;
+    right: 0;
+    z-index: -1;
+  }
 }

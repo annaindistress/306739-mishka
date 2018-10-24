@@ -3,3 +3,22 @@
   margin: 0;
   background-color: #ffffff;
 }
+
+.page__weekly-offer {
+  padding: 30px 27px;
+  padding-bottom: 42px;
+}
+
+@media (min-width: $tablet-width) {
+  .page__weekly-offer {
+    padding: 50px;
+    padding-bottom: 68px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__weekly-offer {
+    padding-top: 130px;
+    padding-bottom: 95px;
+  }
+}

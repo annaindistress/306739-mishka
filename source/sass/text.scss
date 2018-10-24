@@ -81,3 +81,35 @@
     font-style: normal;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .text__size {
+    &--xxl {
+      font-size: 43px;
+    }
+
+    &--xxxl {
+      font-size: 43px;
+    }
+  }
+
+  .text__height {
+    &--xl {
+      line-height: 50px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text__size {
+    &--xxxl {
+      font-size: 53px;
+    }
+  }
+
+  .text__height {
+    &--xl {
+      line-height: 57px;
+    }
+  }
+}
