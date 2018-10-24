@@ -1,5 +1,6 @@
-.advantages {
-  padding: 30px;
+.advantages__title {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .advantages__list {
@@ -9,6 +10,49 @@
 }
 
 .advantages__item {
-  padding-top: 60px;
-  padding-bottom: 20px;
+  padding-top: 55px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    margin-bottom: 40px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .advantages__item {
+    width: 50%;
+    padding-bottom: 55px;
+    font-size: 20px;
+    line-height: 22px;
+
+    &--flower {
+      order: 1;
+    }
+
+    &--money {
+      order: 3;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--wool {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
+  }
 }
