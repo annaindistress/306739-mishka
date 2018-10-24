@@ -24,6 +24,11 @@
   padding: 25px 30px;
 }
 
+.page__modal {
+  width: 100%;
+  padding: 35px 30px;
+}
+
 @media (min-width: $tablet-width) {
   .page__weekly-offer {
     padding: 50px;
@@ -48,6 +53,12 @@
 
   .page__footer {
     margin-top: 60px;
+    padding: 50px;
+  }
+
+  .page__modal {
+    width: 570px;
+    margin: 0 auto;
     padding: 50px;
   }
 }
