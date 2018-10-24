@@ -1,6 +1,26 @@
 .main-footer {
-  margin-top: 40px;
-  padding: 20px 0;
   background-color: #f1f1f1;
   text-align: center;
+}
+
+.main-footer__logo-link {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-footer__logo-link {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__container {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
 }
