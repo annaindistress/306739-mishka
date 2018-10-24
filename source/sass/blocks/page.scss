@@ -19,6 +19,11 @@
   padding-bottom: 50px;
 }
 
+.page__about-process {
+  margin: 0 30px;
+  margin-bottom: 60px;
+}
+
 .page__footer {
   margin-top: 40px;
   padding: 25px 30px;
@@ -49,6 +54,15 @@
     padding: 50px;
     padding-top: 80px;
     padding-bottom: 140px;
+  }
+
+  .page__catalog {
+    margin-top: -102px;
+  }
+
+  .page__about-process {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .page__footer {
@@ -87,6 +101,16 @@
     width: 1050px;
     margin: 0 auto;
     padding-right: 525px;
+  }
+
+  .page__catalog {
+    margin-top: -110px;
+  }
+
+  .page__about-process {
+    max-width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 105px;
   }
 
   .page__footer {
