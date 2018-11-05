@@ -1,17 +1,17 @@
-.main-header {
-  background-color: #ffffff;
-}
-
 .main-header__title {
   padding-top: 75px;
   padding-bottom: 120px;
-  background-color: $bg-grey;
+  font-weight: 700;
+  font-size: $font-size-xl;
+  line-height: $font-size-xl + 3;
+  color: #000000;
+  text-align: center;
+  background-color: $bg-color;
 }
 
 .main-header__slogan {
-  max-width: 260px;
+  max-width: 250px;
   margin: 0 auto;
-  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,6 +19,8 @@
     margin-top: -66px;
     padding-top: 160px;
     padding-bottom: 370px;
+    font-size: $font-size-xxl;
+    line-height: $font-size-xxl + 7;
   }
 
   .main-header__slogan {
@@ -34,6 +36,8 @@
 
   .main-header__title {
     padding-bottom: 345px;
+    font-size: $font-size-xxxl;
+    line-height: $font-size-xxxl + 4;
   }
 
   .main-header__products-navigation {

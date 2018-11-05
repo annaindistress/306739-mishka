@@ -1,54 +1,60 @@
 .contacts__title {
-    margin: 30px;
+  margin: 0 30px 40px 30px;
+  font-size: $font-size-s + 1;
+  line-height: $font-size-s + 13;
+  color: #000000;
 }
 
 .contacts__info {
-  width: calc(100% - 60px);
   margin: 0 30px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  font-size: $font-size-xs;
+  line-height: $font-size-xs + 15;
 }
 
 .contacts__table-cell {
+  padding-bottom: 30px;
+  vertical-align: top;
+
   &--legend {
-    width: 25%;
+    width: 30%;
     text-transform: lowercase;
   }
 }
 
-.contacts__next-line {
-  display: none;
+.contacts__mailto {
+  padding-bottom: 5px;
+  color: $secondary-color;
+  border-bottom: 1px solid $main-color-lightest;
 }
 
-.contacts__map-wrapper {
-  max-height: 457px;
-  margin-bottom: 40px;
-  background-color: #dfdfdf;
+.contacts__address {
+  font-style: normal;
 }
 
 .contacts__map {
-  display: block;
-  margin: 0 auto;
+  width: 100%;
+  height: 457px;
+  margin-bottom: 40px;
+  background-color: $bg-color;
 }
 
 .contacts__button {
   display: block;
-  max-width: 230px;
-  margin: 0 auto
+  width: calc(100% - 60px);
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__title {
-    margin: 0 50px;
-    margin-top: 70px;
-    margin-bottom: 60px;
-    font-size: 43px;
-    line-height: 50px;
+    margin: 0 50px 60px 50px;
+    font-size: $font-size-xxl;
+    line-height: $font-size-xxl + 7;
   }
 
   .contacts__info {
     width: calc(100% - 100px);
     margin: 0 50px;
-    margin-bottom: 60px;
   }
 
   .contacts__info tbody {
@@ -60,17 +66,15 @@
   }
 
   .contacts__table-cell {
-    font-size: 17px;
-    line-height: 30px;
-    vertical-align: top;
+    padding-bottom: 60px;
   }
 
-  .contacts__next-line {
-    display: block;
+  .contacts__map {
+    margin-bottom: 60px;
   }
 
-  .contacts__map-wrapper {
-    margin-bottom: 55px;
+  .contacts__button {
+    width: 230px;
   }
 }
 
@@ -80,16 +84,14 @@
   }
 
   .contacts__title {
-    margin-top: 150px;
-    margin-left: 175px;
-    margin-right: 0;
+    margin: 80px 0 60px;
+    font-size: $font-size-xxxl;
+    line-height: $font-size-xxxl + 4;
   }
 
   .contacts__info {
-    width: 350px;
-    margin-left: 175px;
-    margin-right: 0;
-    margin-bottom: 77px;
+    margin: 0;
+    margin-bottom: 10px;
   }
 
   .contacts__info tbody {
@@ -100,16 +102,19 @@
     width: 100%;
   }
 
-  .contacts__map-wrapper {
+  .contacts__table-cell {
+    padding-bottom: 30px;
+  }
+
+  .contacts__map {
     position: absolute;
-    top: -80px;
+    top: 70px;
     right: 0;
     width: 50%;
-    margin-bottom: 0;
   }
 
   .contacts__button {
-    margin-left: 175px;
-    margin-bottom: 105px;
+    margin: 0;
+    margin-right: auto;
   }
 }

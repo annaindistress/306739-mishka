@@ -1,36 +1,74 @@
 .modal {
   display: none;
-  text-align: center;
+  width: 100%;
   background-color: #ffffff;
   border-top: 1px solid #c6c6c6;
   border-bottom: 1px solid #c6c6c6;
-  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
 
-  &--opened {
+  &--active {
     display: block;
   }
 }
 
 .modal__title {
+  margin: 0;
   margin-bottom: 20px;
+  padding: 0 50px;
+  font-size: $font-size-xl - 2;
+  line-height: $font-size-xl + 3;
   text-transform: uppercase;
+  text-align: center;
+  color: #000000;
 }
 
 .modal__text {
-  margin-bottom: 30px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: $font-size-xs;
+  line-height: $font-size-xl + 15;
+  text-align: center;
 }
 
 .modal__size-list {
-  margin: 0;
+  @include reset-list;
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
-  padding: 0;
-  list-style: none;
+}
+
+.modal__size-item {
+  width: 31%;
+  margin-right: 7px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.modal__size-input {
+  display: none;
+}
+
+.modal__size-label {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  border: 2px solid $bg-color-lighten;
+}
+
+.modal__size-input:checked ~ .modal__size-label {
+  border-color: $main-color-lightest;
 }
 
 .modal__button {
-  width: 260px;
-  margin: 0 auto;
-  background-color: $main-color-light;
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  background-color: $main-color-lightest;
   border: none;
 }
 
@@ -41,15 +79,21 @@
 
   .modal__title {
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: $font-size-xl + 3;
+    line-height: $font-size-xl + 30;
   }
 
   .modal__text {
-    margin-bottom: 25px;
-    font-size: 17px;
+    font-size: $font-size-s;
+  }
+
+  .modal__size-list {
+    max-width: 350px;
+    margin: 0 auto 30px;
   }
 
   .modal__button {
-    width: 352px;
+    width: 350px;
+    margin: 0 auto;
   }
 }

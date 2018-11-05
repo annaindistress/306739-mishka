@@ -1,15 +1,16 @@
 .products-navigation__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
 }
 
 .products-navigation__link {
   display: block;
   padding: 30px;
+  font-weight: 700;
+  font-size: $font-size-m;
+  color: #ffffff;
 
   &--items {
-    background-color: $main-color-light;
+    background-color: $main-color-lightest;
   }
 
   &--toys {
@@ -25,8 +26,7 @@
 @media (min-width: $tablet-width) {
   .products-navigation__list {
     display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0 50px;
   }
 
   .products-navigation__item {
@@ -35,16 +35,12 @@
 
   .products-navigation__link {
     padding: 35px;
+    padding-bottom: 30px;
+    font-size: $font-size-l;
+    line-height: $font-size-l + 10;
   }
 
   .products-navigation__text {
     max-width: 150px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .products-navigation__list {
-    width: 1050px;
-    margin: 0 auto;
   }
 }

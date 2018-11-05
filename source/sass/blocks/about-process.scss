@@ -1,29 +1,30 @@
 .about-process {
-  border: 1px solid #ededed;
+  border: 1px solid $bg-color-lighten;
 }
 
 .about-process__title {
-  margin-top: 30px;
-  margin-bottom: 25px;
+  margin: 25px 0;
   padding-left: 90px;
+  padding-right: 40px;
+  font-size: $font-size-s;
+  color: #000000;
 }
 
 .about-process__video {
-  display: block;
   width: 100%;
-  margin: 0 auto;
-  margin-bottom: 35px;
+  background-color: $bg-color;
 }
 
 .about-process__text {
-  margin: 0 33px;
-  margin-bottom: 25px;
+  margin: 35px;
+  margin-bottom: 30px;
+  font-size: $font-size-xxs;
 }
 
 .about-process__button {
+  display: block;
   width: 192px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  margin: 0 auto 33px;
 }
 
 @media (min-width: $tablet-width) {
@@ -34,54 +35,53 @@
 
   .about-process__title {
     order: 2;
-    margin-top: 0;
-    margin-bottom: 35px;
-    padding-left: 105px;
-    font-size: 20px;
+    margin: 40px;
+    padding: 0 110px;
+    font-size: $font-size-l;
   }
 
   .about-process__video {
     order: 1;
-    height: 455px;
-    margin-bottom: 40px;
   }
 
   .about-process__text {
     order: 3;
     margin: 40px;
     margin-top: 0;
-    font-size: 15px;
-    line-height: 30px;
+    font-size: $font-size-xs;
+    line-height: $font-size-xs + 15;
   }
+
   .about-process__button {
     order: 4;
-    width: 585px;
-    margin-bottom: 40px;
+    width: 584px;
+    margin-bottom: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-process {
     flex-wrap: wrap;
-    height: 458px;
+    height: 455px;
   }
 
   .about-process__title {
-    width: 150px;
-    margin-top: 95px;
-    margin-bottom: 40px;
-    padding-left: 80px;
+    width: 369px;
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 100px 130px 0 80px;
   }
 
   .about-process__video {
-    width: 680px;
-    margin: 0;
+    width: 682px;
+    height: 100%;
   }
 
   .about-process__text {
-    width: 230px;
-    margin-left: 80px;
+    width: 369px;
+    margin: 0;
     margin-bottom: 50px;
+    padding: 0 60px 0 80px;
   }
 
   .about-process__button {

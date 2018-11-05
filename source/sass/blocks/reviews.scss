@@ -1,26 +1,40 @@
 .reviews__title {
-  margin-top: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: $font-size-xl - 2;
+  line-height: $font-size-xl + 3;
+  color: #000000;
 }
 
 .reviews__item {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  font-size: $font-size-xs;
+  line-height: $font-size-xs + 15;
 }
 
 .reviews__text {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
-.reviews__next-line {
-  display: none;
+.reviews__author {
+  font-size: $font-size-s;
+  font-style: normal;
 }
 
-.reviews__author-nickname {
+.reviews__author-name {
   display: block;
+  font-weight: 700;
+  line-height: $font-size-s + 7;
+  color: #000000;
 }
 
 .reviews__toggles {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
+}
+
+.reviews__button {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,33 +42,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
   }
 
   .reviews__title {
     order: 1;
-    width: 50%;
-    margin-top: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
+    font-size: $font-size-xxl;
+    line-height: $font-size-xxl + 7;
   }
 
   .reviews__wrapper {
     order: 3;
   }
 
-  .reviews__text {
-    margin-bottom: 65px;
-    font-size: 17px;
-    line-height: 30px;
+  .reviews__item {
+    font-size: $font-size-s;
   }
 
-  .reviews__author-nickname {
-    line-height: 30px;
+  .reviews__text {
+    margin-bottom: 50px;
+  }
+
+  .reviews__author-name {
+    font-size: $font-size-s + 1;
   }
 
   .reviews__toggles {
-    display: flex;
-    width: 167px;
+    width: 175px;
     margin-top: -80px;
     margin-left: auto;
     margin-bottom: 0;
@@ -63,29 +77,17 @@
   .reviews__button {
     order: 2;
     width: 175px;
-    margin-top: -55px;
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews__title {
-    margin-bottom: 55px;
-  }
-
-  .reviews__wrapper {
-    width: 100%;
+    font-size: $font-size-xxxl;
+    line-height: $font-size-xxxl + 4;
   }
 
   .reviews__text {
-    max-width: 780px;
-    margin-bottom: 40px;
-  }
-
-  .reviews__next-line {
-    display: block;
-  }
-
-  .reviews__button {
-    margin-top: -61px;
+    max-width: 790px;
   }
 }

@@ -1,10 +1,28 @@
 .main-footer {
-  background-color: #f1f1f1;
-  text-align: center;
+  background-color: $bg-color;
 }
 
 .main-footer__logo-link {
   display: none;
+}
+
+.main-footer__social {
+  padding-bottom: 25px;
+}
+
+.main-footer__copyright {
+  padding-top: 25px;
+  font-weight: 700;
+  font-size: $font-size-s + 1;
+  line-height: 1;
+  color: #000000;
+  text-align: center;
+}
+
+.main-footer__copyright-link {
+  display: inline-block;
+  margin-left: 30px;
+  vertical-align: middle;
 }
 
 @media (min-width: $tablet-width) {
@@ -15,6 +33,14 @@
 
   .main-footer__logo-link {
     display: block;
+  }
+
+  .main-footer__social {
+    padding: 0;
+  }
+
+  .main-footer__copyright {
+    padding: 0;
   }
 }
 
