@@ -1,14 +1,67 @@
-.advantages {
-  padding: 30px;
+.advantages__title {
+  margin: 0;
+  font-size: $font-size-xl - 2;
+  line-height: $font-size-xl + 3;
+  color: #000000;
+}
 
-  &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.advantages__list {
+  @include reset-list;
+  font-weight: 700;
+  line-height: $font-size-l;
+  color: #000000;
+}
+
+.advantages__item {
+  padding-top: 75px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    font-size: $font-size-xxl;
+    line-height: $font-size-xxl + 7;
   }
 
-  &__item {
-    padding-top: 60px;
-    padding-bottom: 20px;
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: $font-size-l;
+    line-height: $font-size-l + 2;
+  }
+
+  .advantages__item {
+    width: 50%;
+    padding-top: 100px;
+
+    &--flower {
+      order: 1;
+    }
+
+    &--money {
+      order: 3;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--wool {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__title {
+    font-size: $font-size-xxxl;
+    line-height: $font-size-xxxl + 4;
   }
 }

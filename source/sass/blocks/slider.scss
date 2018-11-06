@@ -1,1 +1,26 @@
-/* slider block */
+.slider__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.slider__toggles {
+  display: flex;
+}
+
+.slider__toggle {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  height: 50px;
+  border: 1px solid $bg-color-lighten;
+  background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggle {
+    border: none;
+  }
+}

@@ -1,26 +1,138 @@
-.weekly-offer {
-  padding: 0 30px;
+.weekly-offer__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: $font-size-xl - 2;
+  line-height: $font-size-xl + 3;
+  color: #000000;
+}
 
-  &__product-info {
-    min-width: 100%;
-    margin-bottom: 25px;
+.weekly-offer__subtitle {
+  font-size: $font-size-s;
+  line-height: $font-size-s + 3;
+  text-transform: uppercase;
+  color: $main-color-lightest;
+}
+
+.weekly-offer__description {
+  margin-right: 2px;
+  margin-bottom: 25px;
+  font-size: $font-size-xs;
+  line-height: $font-size-xs + 9;
+}
+
+.weekly-offer__product-info {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.weekly-offer__table-cell {
+  padding: 10px 0;
+  font-size: $font-size-xs;
+  line-height: $font-size-xs + 5;
+  border-bottom: 1px solid #ececec;
+
+  &--legend {
+    width: 35%;
+  }
+}
+
+.weekly-offer__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.weekly-offer__price {
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.weekly-offer__button {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .weekly-offer {
+    position: relative;
   }
 
-  &__table-cell {
-    padding: 10px 0;
-    border-bottom: 1px solid #ececec;
-
-    &--legend {
-      width: 25%;
-    }
+  .weekly-offer__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $font-size-xxl;
+    line-height: $font-size-xxl + 7;
   }
 
-  &__image {
+  .weekly-offer__subtitle {
     display: block;
-    margin: 0 auto;
+    width: 126px;
+    line-height: 1;
+    text-align: center;
   }
 
-  &__price {
-    text-align: center;
+  .weekly-offer__description {
+    width: 285px;
+    margin-bottom: 40px;
+    font-size: $font-size-s;
+    line-height: $font-size-s + 13;
+  }
+
+  .weekly-offer__product-info {
+    width: 290px;
+    margin-bottom: 60px;
+  }
+
+  .weekly-offer__image {
+    position: absolute;
+    top: 140px;
+    right: 50px;
+  }
+
+  .weekly-offer__price {
+    max-width: 290px;
+    margin-bottom: 30px;
+  }
+
+  .weekly-offer__button {
+    width: 290px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .weekly-offer__title {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    font-size: $font-size-xxxl;
+    line-height: $font-size-xxxl + 4;
+  }
+
+  .weekly-offer__subtitle {
+    width: 170px;
+    padding: 0 40px;
+  }
+
+  .weekly-offer__description {
+    margin-left: 170px;
+  }
+
+  .weekly-offer__product-info {
+    margin-left: 170px;
+  }
+
+  .weekly-offer__image {
+    top: 70px;
+    right: 0;
+    z-index: -1;
+  }
+
+  .weekly-offer__price {
+    margin-left: 170px;
+  }
+
+  .weekly-offer__button {
+    margin-left: 170px;
   }
 }

@@ -1,8 +1,12 @@
 .button {
-  display: block;
-  width: 100%;
+  margin: 0;
   padding: 15px;
+  font-weight: 700;
+  font-size: $font-size-s;
+  line-height: $font-size-s + 3;
   text-transform: uppercase;
   text-align: center;
-  border: 1px solid #444444;
+  color: $secondary-color;
+  background-color: #ffffff;
+  border: 2px solid $secondary-color;
 }

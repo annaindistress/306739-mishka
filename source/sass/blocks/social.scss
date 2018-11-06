@@ -1,7 +1,17 @@
 .social {
-  &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+  font-size: 0;
+}
+
+.social__list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
   }
 }
