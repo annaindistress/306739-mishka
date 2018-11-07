@@ -34,8 +34,8 @@
 .main-navigation__toggle {
   position: absolute;
   right: 30px;
-  border: none;
   background-color: transparent;
+  border: none;
 }
 
 .main-navigation__link {
@@ -65,8 +65,8 @@
     &--catalog {
       order: 4;
       width: 200px;
-      padding-left: 50px;
       padding-right: 15px;
+      padding-left: 50px;
       font-size: $font-size-xs;
       border: none;
     }
@@ -82,22 +82,22 @@
       order: 2;
       width: 83px;
       font-size: 0;
-      border-left: 1px solid $bg-color-lighten;
       border-right: 1px solid $bg-color-lighten;
+      border-left: 1px solid $bg-color-lighten;
     }
 
     &--cart {
       order: 3;
       width: 315px;
       padding-top: 35px;
-      padding-left: 82px;
       padding-bottom: 30px;
+      padding-left: 82px;
     }
 
     &--delivery {
+      display: inline-block;
       flex-grow: 1;
       order: 6;
-      display: inline-block;
       padding-right: 50px;
       font-size: $font-size-xs;
       text-align: right;
@@ -107,8 +107,8 @@
   }
 
   .main-navigation__logo-link {
-    margin-left: 49px;
     margin-right: auto;
+    margin-left: 49px;
   }
 
   .main-navigation__toggle {
@@ -156,8 +156,8 @@
     }
 
     &--new {
-      order: 6;
       display: inline-block;
+      order: 6;
       width: 235px;
       padding-left: 50px;
       font-size: $font-size-xs;
@@ -165,8 +165,8 @@
     }
 
     &--sale {
-      order: 7;
       display: inline-block;
+      order: 7;
       width: 235px;
       padding-left: 35px;
       font-size: $font-size-xs;

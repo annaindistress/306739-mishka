@@ -10,8 +10,8 @@
 }
 
 .catalog__list {
-  @include reset-list;
   padding: 0 30px;
+  @include reset-list;
 }
 
 .catalog__item {

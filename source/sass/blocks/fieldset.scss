@@ -9,8 +9,8 @@
   font-weight: 700;
   font-size: $font-size-s;
   line-height: 1;
-  text-transform: uppercase;
   color: $main-color-lightest;
+  text-transform: uppercase;
   background-color: #ffffff;
 
   &--user-email {
@@ -51,10 +51,10 @@
 
 .fieldset__input {
   display: block;
-  background-color: inherit;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 15px;
+  background-color: inherit;
   border: none;
   border-bottom: 2px solid #000000;
 
@@ -140,14 +140,14 @@
     padding-top: 15px;
 
     &--product-type {
-      padding-left: 65px;
       padding-bottom: 55px;
+      padding-left: 65px;
     }
 
     &--product-color {
       width: 50%;
-      padding-left: 60px;
       padding-bottom: 20px;
+      padding-left: 60px;
     }
 
     &--user-name {
@@ -187,16 +187,16 @@
   .fieldset__list-item {
     &--product-type {
       padding-top: 20px;
-      padding-left: 80px;
       padding-bottom: 40px;
+      padding-left: 80px;
     }
 
     &--product-color {
       width: 260px;
       margin-bottom: 25px;
       padding-top: 17px;
-      padding-left: 80px;
       padding-bottom: 20px;
+      padding-left: 80px;
     }
   }
 
