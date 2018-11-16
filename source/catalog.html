@@ -6,7 +6,7 @@
     <title>Мишка: каталог товаров</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page  page__overlay">
+  <body class="page">
 
     <header class="main-header">
       <nav class="main-header__navigation  main-navigation">
@@ -134,7 +134,7 @@
       </div>
     </footer>
 
-    <section class="page__modal  modal">
+    <section class="page__modal  modal  modal--closed">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
@@ -155,6 +155,7 @@
         <button class="modal__button button" type="submit">Добавить</button>
       </form>
     </section>
+    <div class="page__modal-overlay  page__modal-overlay--closed"></div>
 
   </body>
 </html>
