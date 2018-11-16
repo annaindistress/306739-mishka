@@ -1,12 +1,15 @@
 .weekly-offer__title {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
+  padding-left: 2px;
   font-size: $font-size-xl - 2;
   line-height: $font-size-xl + 3;
   color: #000000;
 }
 
 .weekly-offer__subtitle {
+  display: block;
+  margin-top: 5px;
   font-size: $font-size-s;
   line-height: $font-size-s + 3;
   color: $main-color-lightest;
@@ -14,43 +17,47 @@
 }
 
 .weekly-offer__description {
-  margin-right: 2px;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
+  padding-left: 2px;
   font-size: $font-size-xs;
   line-height: $font-size-xs + 9;
 }
 
 .weekly-offer__product-info {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .weekly-offer__table-cell {
-  padding: 10px 0;
+  padding: 7px 0 10px;
   font-size: $font-size-xs;
   line-height: $font-size-xs + 5;
   border-bottom: 1px solid #ececec;
 
   &--legend {
-    width: 35%;
+    width: 37%;
   }
 }
 
 .weekly-offer__image {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 25px;
+  width: calc(100% - 4px);
+  margin-bottom: 24px;
+  margin-left: 2px;
 }
 
 .weekly-offer__price {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
+  margin-left: -2px;
   font-weight: 700;
   text-align: center;
 }
 
 .weekly-offer__button {
   display: block;
-  width: 100%;
+  width: calc(100% - 4px);
+  margin: 0 auto;
+  padding-bottom: 13px;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,6 +69,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 49px;
+    margin-left: -3px;
     font-size: $font-size-xxl;
     line-height: $font-size-xxl + 7;
   }
@@ -75,29 +84,39 @@
 
   .weekly-offer__description {
     width: 285px;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     font-size: $font-size-s;
     line-height: $font-size-s + 13;
   }
 
   .weekly-offer__product-info {
     width: 290px;
-    margin-bottom: 60px;
+    margin-bottom: 54px;
+  }
+
+  .weekly-offer__table-cell {
+    &--legend {
+      width: 34%;
+    }
   }
 
   .weekly-offer__image {
     position: absolute;
-    top: 140px;
+    top: 152px;
     right: 50px;
+    width: 334px;
   }
 
   .weekly-offer__price {
-    max-width: 290px;
-    margin-bottom: 30px;
+    max-width: 297px;
+    margin-bottom: 34px;
+    font-size: $font-size-l;
   }
 
   .weekly-offer__button {
-    width: 290px;
+    width: 292px;
+    margin: 0;
+    margin-left: 1px;
   }
 }
 

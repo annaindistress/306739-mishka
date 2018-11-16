@@ -12,22 +12,21 @@
 }
 
 .page__weekly-offer {
-  padding: 30px 27px;
-  padding-bottom: 42px;
+  padding: 27px 28px 42px;
 }
 
 .page__advantages {
   max-width: 320px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 27px 24px;
 }
 
 .page__reviews {
-  padding: 20px 30px 50px;
+  padding: 28px 29px 52px;
 }
 
 .page__contacts {
-  padding: 40px 0;
+  padding: 39px 0;
 }
 
 .page__about-process {
@@ -58,29 +57,29 @@
 
 .page__modal {
   position: fixed;
-  top: 20%;
+  top: 18.4%;
   left: 0;
   z-index: 3;
-  padding: 30px;
+  padding: 30px 28px;
+  padding-bottom: 46px;
 }
 
 @media (min-width: $tablet-width) {
   .page__weekly-offer {
-    padding: 55px 50px 68px;
+    padding: 46px 47px 68px;
   }
 
   .page__advantages {
     max-width: 768px;
-    padding: 50px;
-    padding-bottom: 75px;
+    padding: 50px 42px 83px;
   }
 
   .page__reviews {
-    padding: 80px 50px 100px;
+    padding: 77px 45px 135px;
   }
 
   .page__contacts {
-    padding: 70px 0 55px;
+    padding: 61px 0 57px;
   }
 
   .page__catalog {
@@ -98,12 +97,15 @@
 
   .page__footer {
     padding: 50px;
+    padding-left: 46px;
   }
 
   .page__modal {
-    left: calc(50% - 566px / 2);
-    max-width: 566px;
-    padding: 45px;
+    top: 25%;
+    left: calc(50% - 568px / 2);
+    max-width: 568px;
+    padding: 46px;
+    padding-top: 33px;
   }
 }
 

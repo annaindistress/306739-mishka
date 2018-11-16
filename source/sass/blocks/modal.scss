@@ -13,8 +13,8 @@
 
 .modal__title {
   margin: 0;
-  margin-bottom: 20px;
-  padding: 0 50px;
+  margin-bottom: 6px;
+  padding: 0 51px;
   font-size: $font-size-xl - 2;
   line-height: $font-size-xl + 3;
   text-align: center;
@@ -24,7 +24,7 @@
 
 .modal__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   font-size: $font-size-xs;
   line-height: $font-size-xl + 15;
   text-align: center;
@@ -33,7 +33,7 @@
 .modal__size-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   @include reset-list;
 }
 
@@ -66,7 +66,9 @@
 
 .modal__button {
   display: block;
-  width: 100%;
+  width: calc(100% - 4px);
+  margin: 0 auto;
+  padding-top: 17px;
   color: #ffffff;
   background-color: $main-color-lightest;
   border: none;
@@ -78,18 +80,23 @@
   }
 
   .modal__title {
-    margin-bottom: 30px;
+    margin-bottom: 8px;
     font-size: $font-size-xl + 3;
     line-height: $font-size-xl + 30;
   }
 
   .modal__text {
+    margin-bottom: 15px;
     font-size: $font-size-s;
   }
 
   .modal__size-list {
-    max-width: 350px;
-    margin: 0 auto 30px;
+    max-width: 362px;
+    margin: 0 auto 31px;
+  }
+
+  .modal__size-label {
+    padding-bottom: 16px;
   }
 
   .modal__button {

@@ -17,10 +17,28 @@
   padding: 0;
   background-color: #ffffff;
   border: 1px solid $bg-color-lighten;
+
+  &--prev {
+    padding-top: 2px;
+    padding-right: 4px;
+  }
+
+  &--next {
+    padding-top: 2px;
+    padding-right: 6px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .slider__toggle {
     border: none;
+
+    &--prev {
+      padding-right: 5px;
+    }
+
+    &--next {
+      padding-right: 7px;
+    }
   }
 }

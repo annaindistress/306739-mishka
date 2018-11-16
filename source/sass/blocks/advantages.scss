@@ -1,5 +1,6 @@
 .advantages__title {
   margin: 0;
+  padding-left: 4px;
   font-size: $font-size-xl - 2;
   line-height: $font-size-xl + 3;
   color: #000000;
@@ -13,7 +14,43 @@
 }
 
 .advantages__item {
-  padding-top: 75px;
+  padding-top: 83px;
+  padding-left: 5px;
+  background-repeat: no-repeat;
+
+  &--flower {
+    padding-top: 86px;
+    background-image: url(../../img/icon-feature-flower.svg);
+    background-position: 5.8% 36%;
+  }
+
+  &--money {
+    background-image: url(../../img/icon-feature-money.svg);
+    background-position: 2.6% 31%;
+  }
+
+  &--heart {
+    background-image: url(../../img/icon-feature-heart.svg);
+    background-position: 5.6% 37%;
+  }
+
+  &--wool {
+    padding-left: 7px;
+    background-image: url(../../img/icon-feature-ball.svg);
+    background-position: 3.9% 36%;
+  }
+
+  &--rocket {
+    padding-left: 7px;
+    background-image: url(../../img/icon-feature-rocket.svg);
+    background-position: 0 33%;
+  }
+
+  &--gift {
+    padding-left: 7px;
+    background-image: url(../../img/icon-feature-gift.svg);
+    background-position: 3.6% 34%;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -31,30 +68,44 @@
 
   .advantages__item {
     width: 50%;
-    padding-top: 100px;
+    padding-top: 111px;
+    padding-left: 8px;
 
     &--flower {
       order: 1;
+      padding-top: 103px;
+      background-position: 5.5% 44.1%;
     }
 
     &--money {
       order: 3;
+      background-position: 2.9% 45%;
     }
 
     &--heart {
       order: 5;
+      background-position: 5.3% 49%;
     }
 
     &--wool {
       order: 2;
+      padding-top: 103px;
+      padding-left: 1px;
+      background-position: 1% 46%;
+
     }
 
     &--rocket {
       order: 4;
+      margin-left: -5px;
+      padding-left: 6px;
+      background-position: 0% 46%;
     }
 
     &--gift {
       order: 6;
+      padding-left: 1px;
+      background-position: 1% 48%;
     }
   }
 }
