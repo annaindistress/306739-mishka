@@ -35,7 +35,9 @@
 }
 
 .fieldset__list {
-  @include reset-list;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .fieldset__list-item {

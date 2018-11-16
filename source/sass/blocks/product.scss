@@ -1,7 +1,7 @@
 .product {
   display: flex;
   flex-direction: column;
-  border: 1px solid $bg-color-lighten;
+  border: 1px solid transparentize($secondary-color, 0.9);
 }
 
 .product__link {
@@ -46,7 +46,7 @@
   font-weight: 700;
   font-size: $font-size-xs;
   color: #000000;
-  border-top: 1px solid $bg-color-lighten;
+  border-top: 1px solid transparentize($secondary-color, 0.9);
 }
 
 @media (min-width: $tablet-width) {

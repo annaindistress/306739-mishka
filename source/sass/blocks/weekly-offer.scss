@@ -32,7 +32,7 @@
   padding: 7px 0 10px;
   font-size: $font-size-xs;
   line-height: $font-size-xs + 5;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid transparentize($secondary-color, 0.9);
 
   &--legend {
     width: 37%;

@@ -1,11 +1,13 @@
 .main-navigation__list {
-  @include reset-list;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .main-navigation__item {
   position: relative;
   padding: 26px 30px 28px;
-  border-bottom: 1px solid $bg-color-lighten;
+  border-bottom: 1px solid transparentize($secondary-color, 0.9);
 
   &--logo {
     padding: 22px;
@@ -93,8 +95,8 @@
       order: 2;
       width: 83px;
       font-size: 0;
-      border-right: 1px solid $bg-color-lighten;
-      border-left: 1px solid $bg-color-lighten;
+      border-right: 1px solid transparentize($secondary-color, 0.9);
+      border-left: 1px solid transparentize($secondary-color, 0.9);
     }
 
     &--cart {
@@ -158,7 +160,7 @@
       padding-top: 35px;
       padding-right: 0;
       font-size: $font-size-s;
-      border-bottom: 1px solid $bg-color-lighten;
+      border-bottom: 1px solid transparentize($secondary-color, 0.9);
     }
 
     &--order {
@@ -167,7 +169,7 @@
       padding-top: 35px;
       padding-left: 35px;
       font-size: $font-size-s;
-      border-bottom: 1px solid $bg-color-lighten;
+      border-bottom: 1px solid transparentize($secondary-color, 0.9);
     }
 
     &--search {

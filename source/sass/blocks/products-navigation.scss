@@ -1,5 +1,7 @@
 .products-navigation__list {
-  @include reset-list;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .products-navigation__link {
@@ -29,7 +31,7 @@
   top: 22%;
   right: 11%;
 
-  &--toys{
+  &--toys {
     top: 21%;
     right: 8%;
   }

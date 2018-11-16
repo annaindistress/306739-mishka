@@ -16,7 +16,7 @@
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  border: 1px solid $bg-color-lighten;
+  border: 1px solid transparentize($secondary-color, 0.9);
 
   &--prev {
     padding-top: 2px;

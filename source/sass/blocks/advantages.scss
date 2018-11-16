@@ -7,10 +7,12 @@
 }
 
 .advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   font-weight: 700;
   line-height: $font-size-l;
   color: #000000;
-  @include reset-list;
 }
 
 .advantages__item {
@@ -20,35 +22,35 @@
 
   &--flower {
     padding-top: 86px;
-    background-image: url(../../img/icon-feature-flower.svg);
+    background-image: url("../../img/icon-feature-flower.svg");
     background-position: 5.8% 36%;
   }
 
   &--money {
-    background-image: url(../../img/icon-feature-money.svg);
+    background-image: url("../../img/icon-feature-money.svg");
     background-position: 2.6% 31%;
   }
 
   &--heart {
-    background-image: url(../../img/icon-feature-heart.svg);
+    background-image: url("../../img/icon-feature-heart.svg");
     background-position: 5.6% 37%;
   }
 
   &--wool {
     padding-left: 7px;
-    background-image: url(../../img/icon-feature-ball.svg);
+    background-image: url("../../img/icon-feature-ball.svg");
     background-position: 3.9% 36%;
   }
 
   &--rocket {
     padding-left: 7px;
-    background-image: url(../../img/icon-feature-rocket.svg);
+    background-image: url("../../img/icon-feature-rocket.svg");
     background-position: 0 33%;
   }
 
   &--gift {
     padding-left: 7px;
-    background-image: url(../../img/icon-feature-gift.svg);
+    background-image: url("../../img/icon-feature-gift.svg");
     background-position: 3.6% 34%;
   }
 }
@@ -92,7 +94,6 @@
       padding-top: 103px;
       padding-left: 1px;
       background-position: 1% 46%;
-
     }
 
     &--rocket {

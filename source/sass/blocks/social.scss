@@ -8,8 +8,9 @@
   justify-content: space-between;
   width: 146px;
   margin: 0 auto;
+  padding: 0;
   padding-right: 4px;
-  @include reset-list;
+  list-style: none;
 }
 
 .social__link {
