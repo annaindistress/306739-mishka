@@ -57,6 +57,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    background-image: url("../../img/icon-flag.svg");
+    background-repeat: no-repeat;
+    background-position: 92.6% 5.3%;
+  }
+
   .contacts__title {
     margin: 0 50px 44px 45px;
     font-size: $font-size-xxl;
@@ -95,9 +101,9 @@
   }
 
   .contacts__button {
-    width: 230px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    width: 232px;
+    padding-top: 15px;
+    padding-bottom: 13px;
   }
 }
 

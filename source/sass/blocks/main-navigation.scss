@@ -42,6 +42,11 @@
   }
 }
 
+.main-navigation__logo-link svg {
+  width: 85px;
+  height: 35px;
+}
+
 .main-navigation__toggle {
   position: absolute;
   top: 28px;
@@ -214,6 +219,11 @@
   .main-navigation__logo-link {
     margin-right: auto;
     margin-left: 49px;
+  }
+
+  .main-navigation__logo-link svg {
+    width: 113px;
+    height: 46px;
   }
 
   .main-navigation__toggle {

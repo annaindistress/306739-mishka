@@ -78,7 +78,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 49px;
-    margin-left: -3px;
+    margin-left: -2px;
     font-size: $font-size-xxl;
     line-height: $font-size-xxl + 7;
   }
@@ -86,6 +86,7 @@
   .weekly-offer__subtitle {
     display: block;
     width: 126px;
+    margin-right: 3px;
     line-height: 1;
     text-align: center;
   }
@@ -99,7 +100,7 @@
 
   .weekly-offer__product-info {
     width: 290px;
-    margin-bottom: 54px;
+    margin-bottom: 56px;
   }
 
   .weekly-offer__table-cell {
@@ -122,7 +123,7 @@
   }
 
   .weekly-offer__button {
-    width: 292px;
+    width: 293px;
     margin: 0;
     margin-left: 1px;
   }

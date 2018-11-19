@@ -55,9 +55,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("../../img/review@1x.jpg"), url("../../img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 0 0, 10% 100%;
+    background-size: 351px 457px, 103%;
   }
 
   .reviews__title {
@@ -92,13 +93,14 @@
 
   .reviews__toggles {
     width: 175px;
-    margin: -84px 2px 0 auto;
+    margin: -83px 2px 0 auto;
   }
 
   .reviews__button {
     order: 2;
     width: 175px;
-    margin: 2px 5px 29px 0;
+    margin: 1px 5px 29px 0;
+    padding-top: 15px;
   }
 }
 
