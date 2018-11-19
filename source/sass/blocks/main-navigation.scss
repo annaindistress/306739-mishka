@@ -250,16 +250,23 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-navigation__logo-link svg {
+    width: 149px;
+    height: 72px;
+  }
+
   .main-navigation__item {
     &--logo {
       order: 3;
       width: 277px;
+      padding-top: 6px;
+      padding-bottom: 28px;
     }
 
     &--catalog {
       order: 1;
       width: 235px;
-      padding-top: 35px;
+      padding-top: 31px;
       padding-right: 0;
       font-size: $font-size-s;
       border-bottom: 1px solid transparentize($secondary-color, 0.9);
@@ -268,7 +275,7 @@
     &--order {
       order: 2;
       width: 235px;
-      padding-top: 35px;
+      padding-top: 31px;
       padding-left: 35px;
       font-size: $font-size-s;
       border-bottom: 1px solid transparentize($secondary-color, 0.9);
@@ -282,12 +289,14 @@
 
     &--cart {
       order: 5;
+      padding-left: 82px;
     }
 
     &--new {
       display: inline-block;
       order: 6;
       width: 235px;
+      padding-top: 16px;
       padding-left: 50px;
       font-size: $font-size-xs;
       border: none;
@@ -297,7 +306,7 @@
       display: inline-block;
       order: 7;
       width: 235px;
-      padding-left: 35px;
+      padding-left: 34px;
       font-size: $font-size-xs;
       border: none;
     }

@@ -110,17 +110,19 @@
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
+    background-position: 6.3% 24%;
   }
 
   .contacts__title {
-    margin: 80px 0 60px;
+    margin: 81px 0 43px;
     font-size: $font-size-xxxl;
     line-height: $font-size-xxxl + 4;
   }
 
   .contacts__info {
+    width: calc(100% - 40px);
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 49px;
   }
 
   .contacts__info tbody {
@@ -132,18 +134,19 @@
   }
 
   .contacts__table-cell {
-    padding-bottom: 30px;
+    padding-bottom: 26px;
   }
 
   .contacts__map {
     position: absolute;
-    top: 70px;
-    right: 0;
+    top: 71px;
+    right: 2px;
     width: 50%;
   }
 
   .contacts__button {
     margin: 0;
     margin-right: auto;
+    margin-left: 6px;
   }
 }

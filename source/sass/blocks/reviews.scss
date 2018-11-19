@@ -106,11 +106,21 @@
 
 @media (min-width: $desktop-width) {
   .reviews__title {
+    margin-bottom: 32px;
     font-size: $font-size-xxxl;
     line-height: $font-size-xxxl + 4;
   }
 
   .reviews__text {
     max-width: 790px;
+    margin-bottom: 38px;
+  }
+
+  .reviews__toggles {
+    margin: -85px -89px 0 auto;
+  }
+
+  .reviews__button {
+    margin: 7px 0 29px 0;
   }
 }

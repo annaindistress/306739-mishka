@@ -133,34 +133,40 @@
   .weekly-offer__title {
     flex-direction: row-reverse;
     justify-content: flex-end;
+    margin-bottom: 48px;
     font-size: $font-size-xxxl;
     line-height: $font-size-xxxl + 4;
   }
 
   .weekly-offer__subtitle {
     width: 170px;
+    margin-right: 2px;
+    margin-left: -3px;
     padding: 0 40px;
   }
 
   .weekly-offer__description {
-    margin-left: 170px;
+    margin-bottom: 48px;
+    margin-left: 173px;
   }
 
   .weekly-offer__product-info {
-    margin-left: 170px;
+    margin-bottom: 110px;
+    margin-left: 173px;
   }
 
   .weekly-offer__image {
-    top: 70px;
+    top: 74px;
     right: 0;
     z-index: -1;
+    width: 525px;
   }
 
   .weekly-offer__price {
-    margin-left: 170px;
+    margin-left: 172px;
   }
 
   .weekly-offer__button {
-    margin-left: 170px;
+    margin-left: 174px;
   }
 }

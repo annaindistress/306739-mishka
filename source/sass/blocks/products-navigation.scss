@@ -86,3 +86,19 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .products-navigation__link {
+    padding: 30px 36px 27px;
+  }
+
+  .products-navigation__icon {
+    top: 26%;
+    right: 7%;
+
+    &--toys {
+      top: 28%;
+      right: 6.7%;
+    }
+  }
+}

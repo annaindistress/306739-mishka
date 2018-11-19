@@ -29,3 +29,13 @@ a {
   clip: rect(0, 0, 0, 0);
   clip-path: inset(100%);
 }
+
+.next-line--desktop {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .next-line--desktop {
+    display: block;
+  }
+}
