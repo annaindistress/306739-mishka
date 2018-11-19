@@ -4,6 +4,7 @@
 
 .about-process__title {
   position: relative;
+  max-width: 300px;
   margin: 24px 0;
   padding-right: 40px;
   padding-left: 89px;
@@ -13,8 +14,8 @@
 
 .about-process__title svg {
   position: absolute;
-  top: 13%;
-  left: 12.9%;
+  top: 6px;
+  left: 33px;
 }
 
 .about-process__title path {
@@ -23,26 +24,28 @@
 
 .about-process__video {
   position: relative;
-  width: 260px;
+  width: 100%;
   height: 150px;
   background-color: $bg-color;
   cursor: pointer;
 }
 
 .about-process__video img {
+  display: block;
   width: 259px;
   height: 150px;
+  margin: 0 auto;
 }
 
 .about-process__video svg {
   position: absolute;
   top: 24.7%;
-  left: 30%;
+  left: calc(50% - 51px);
 }
 
 .about-process__video:hover svg {
   top: 18.7%;
-  left: 27%;
+  left: calc(50% - 60px);
   width: 121px;
   height: 92px;
 }
