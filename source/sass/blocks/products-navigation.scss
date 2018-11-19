@@ -19,6 +19,14 @@
   &--toys {
     background-color: $main-color-dark;
   }
+
+  &:hover {
+    padding-bottom: 35px;
+  }
+
+  &:active {
+    color: transparentize(#ffffff, 0.7);
+  }
 }
 
 .products-navigation__text {
@@ -35,6 +43,18 @@
     top: 21%;
     right: 8%;
   }
+}
+
+.products-navigation__icon path {
+  fill: transparentize($main-color-dark-icons, 0.5);
+}
+
+.products-navigation__link:hover .products-navigation__icon path {
+  fill: transparentize($main-color-dark-icons, 0.3);
+}
+
+.products-navigation__link:active .products-navigation__icon path {
+  fill: transparentize($main-color-dark-icons, 0.7);
 }
 
 @media (min-width: $tablet-width) {

@@ -16,43 +16,60 @@
 }
 
 .advantages__item {
+  position: relative;
   padding-top: 83px;
   padding-left: 5px;
   background-repeat: no-repeat;
 
   &--flower {
     padding-top: 86px;
-    background-image: url("../../img/icon-feature-flower.svg");
-    background-position: 5.8% 36%;
-  }
-
-  &--money {
-    background-image: url("../../img/icon-feature-money.svg");
-    background-position: 2.6% 31%;
-  }
-
-  &--heart {
-    background-image: url("../../img/icon-feature-heart.svg");
-    background-position: 5.6% 37%;
   }
 
   &--wool {
-    padding-left: 7px;
-    background-image: url("../../img/icon-feature-ball.svg");
-    background-position: 3.9% 36%;
+    padding-left: 6px;
   }
 
   &--rocket {
-    padding-left: 7px;
-    background-image: url("../../img/icon-feature-rocket.svg");
-    background-position: 0 33%;
+    padding-left: 6px;
   }
 
   &--gift {
-    padding-left: 7px;
-    background-image: url("../../img/icon-feature-gift.svg");
-    background-position: 3.6% 34%;
+    padding-left: 6px;
   }
+}
+
+.advantages__icon {
+  position: absolute;
+  top: 25%;
+  left: 3.4%;
+  display: block;
+
+  &--flower {
+    left: 5%;
+  }
+
+  &--money {
+    top: 24%;
+    left: 2.2%;
+  }
+
+  &--heart {
+    top: 28.1%;
+    left: 5%;
+  }
+
+  &--wool {
+    top: 26%;
+  }
+
+  &--rocket {
+    top: 27%;
+    left: 0%;
+  }
+}
+
+.advantages__icon path {
+  fill: $main-color-lightest;
 }
 
 @media (min-width: $tablet-width) {
@@ -76,37 +93,31 @@
     &--flower {
       order: 1;
       padding-top: 103px;
-      background-position: 5.5% 44.1%;
     }
 
     &--money {
       order: 3;
-      background-position: 2.9% 45%;
     }
 
     &--heart {
       order: 5;
-      background-position: 5.3% 49%;
     }
 
     &--wool {
       order: 2;
       padding-top: 103px;
       padding-left: 1px;
-      background-position: 1% 46%;
     }
 
     &--rocket {
       order: 4;
       margin-left: -5px;
       padding-left: 6px;
-      background-position: 0% 46%;
     }
 
     &--gift {
       order: 6;
       padding-left: 1px;
-      background-position: 1% 48%;
     }
   }
 }

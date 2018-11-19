@@ -25,6 +25,17 @@
   padding-bottom: 4px;
   color: $secondary-color;
   border-bottom: 1px solid $main-color-lightest;
+
+  &:hover {
+    color: $main-color-darkest;
+    border-bottom: 1px solid $main-color-darkest;
+  }
+
+  &:active {
+    color: $main-color-darkest;
+    border-bottom: 1px solid $main-color-darkest;
+    opacity: 0.3;
+  }
 }
 
 .contacts__address {

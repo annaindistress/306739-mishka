@@ -1,3 +1,10 @@
+.weekly-offer {
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 103%;
+}
+
 .weekly-offer__title {
   margin-top: 0;
   margin-bottom: 23px;
@@ -25,11 +32,12 @@
 
 .weekly-offer__product-info {
   width: 100%;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
+  border-collapse: collapse;
 }
 
 .weekly-offer__table-cell {
-  padding: 7px 0 10px;
+  padding: 9px 2px 10px;
   font-size: $font-size-xs;
   line-height: $font-size-xs + 5;
   border-bottom: 1px solid transparentize($secondary-color, 0.9);
