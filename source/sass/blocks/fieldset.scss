@@ -172,6 +172,7 @@
 
 .fieldset__input:active {
   border-color: $main-color-lightest;
+
   &::placeholder {
     color: $secondary-color;
     opacity: 1;
@@ -238,7 +239,7 @@
   }
 
   .fieldset__input--product-type:checked ~ .fieldset__label--product-type::after {
-    top: 0px;
+    top: 0;
     left: -65px;
     width: 21px;
     height: 21px;
@@ -328,8 +329,8 @@
     }
 
     &--product-color {
-        top: 67px;
-        margin-left: -5px;
+      top: 67px;
+      margin-left: -5px;
     }
 
     &--user-name {
