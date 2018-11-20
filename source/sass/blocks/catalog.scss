@@ -1,7 +1,8 @@
 .catalog__title {
   margin: 0;
   margin-bottom: 30px;
-  padding: 75px 0;
+  margin-left: -2px;
+  padding: 70px 0 76px;
   font-size: $font-size-xl;
   line-height: $font-size-xl + 3;
   text-align: center;
@@ -10,8 +11,9 @@
 }
 
 .catalog__list {
-  @include reset-list;
+  margin: 0;
   padding: 0 30px;
+  list-style: none;
 }
 
 .catalog__item {
@@ -21,9 +23,14 @@
 @media (min-width: $tablet-width) {
   .catalog__title {
     margin-bottom: 80px;
-    padding-top: 105px;
+    padding-top: 97px;
+    padding-bottom: 78px;
     font-size: $font-size-xxl;
     line-height: $font-size-xxl + 7;
+    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-position: 0 107%;
+    background-size: 100%;
   }
 
   .catalog__list {
@@ -31,14 +38,14 @@
   }
 
   .catalog__item {
-    margin-bottom: 55px;
+    margin-bottom: 54px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__title {
-    margin-bottom: 130px;
-    padding: 100px 0 90px;
+    margin-bottom: 133px;
+    padding: 92px 0 100px;
     font-size: $font-size-xxxl;
     line-height: $font-size-xxxl + 4;
   }

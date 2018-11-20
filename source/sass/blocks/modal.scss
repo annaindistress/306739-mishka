@@ -1,40 +1,39 @@
 .modal {
-  display: none;
   width: 100%;
   background-color: #ffffff;
   border-top: 1px solid #c6c6c6;
   border-bottom: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
 
-  &--active {
-    display: block;
+  &--closed {
+    display: none;
   }
 }
 
 .modal__title {
-  margin: 0;
-  margin-bottom: 20px;
-  padding: 0 50px;
+  margin: 0 51px 6px 52px;
   font-size: $font-size-xl - 2;
   line-height: $font-size-xl + 3;
-  text-transform: uppercase;
   text-align: center;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .modal__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   font-size: $font-size-xs;
   line-height: $font-size-xl + 15;
   text-align: center;
 }
 
 .modal__size-list {
-  @include reset-list;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+  list-style: none;
 }
 
 .modal__size-item {
@@ -54,22 +53,39 @@
   display: block;
   width: 100%;
   padding: 15px;
+  padding-bottom: 16px;
   font-weight: 700;
   line-height: 1;
   text-align: center;
-  border: 2px solid $bg-color-lighten;
+  border: 2px solid transparentize($secondary-color, 0.9);
+  cursor: pointer;
+
+  &:hover {
+    border-color: transparentize($secondary-color, 0.7);
+  }
 }
 
 .modal__size-input:checked ~ .modal__size-label {
-  border-color: $main-color-lightest;
+  border-color: $main-color;
 }
 
 .modal__button {
   display: block;
-  width: 100%;
+  width: calc(100% - 4px);
+  margin: 0 auto;
+  padding-top: 17px;
   color: #ffffff;
-  background-color: $main-color-lightest;
+  background-color: $main-color;
   border: none;
+
+  &:hover {
+    background-color: $main-color-dark;
+  }
+
+  &:active {
+    color: transparentize(#ffffff, 0.7);
+    background-color: $main-color-dark;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -78,18 +94,23 @@
   }
 
   .modal__title {
-    margin-bottom: 30px;
+    margin-bottom: 8px;
     font-size: $font-size-xl + 3;
     line-height: $font-size-xl + 30;
   }
 
   .modal__text {
+    margin-bottom: 16px;
     font-size: $font-size-s;
   }
 
   .modal__size-list {
-    max-width: 350px;
-    margin: 0 auto 30px;
+    max-width: 362px;
+    margin: 0 auto 31px;
+  }
+
+  .modal__size-label {
+    padding-bottom: 16px;
   }
 
   .modal__button {

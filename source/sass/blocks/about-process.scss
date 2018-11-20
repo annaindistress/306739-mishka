@@ -1,30 +1,70 @@
 .about-process {
-  border: 1px solid $bg-color-lighten;
+  border: 1px solid transparentize($secondary-color, 0.9);
 }
 
 .about-process__title {
-  margin: 25px 0;
-  padding-left: 90px;
+  position: relative;
+  max-width: 300px;
+  margin: 24px 0;
   padding-right: 40px;
+  padding-left: 89px;
   font-size: $font-size-s;
   color: #000000;
 }
 
+.about-process__title svg {
+  position: absolute;
+  top: 6px;
+  left: 33px;
+}
+
+.about-process__title path {
+  fill: $main-color;
+}
+
 .about-process__video {
+  position: relative;
   width: 100%;
+  height: 150px;
   background-color: $bg-color;
+  cursor: pointer;
+}
+
+.about-process__video img {
+  display: block;
+  width: 259px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.about-process__video svg {
+  position: absolute;
+  top: 24.7%;
+  left: calc(50% - 51px);
+}
+
+.about-process__video:hover svg {
+  top: 18.7%;
+  left: calc(50% - 60px);
+  width: 121px;
+  height: 92px;
+}
+
+.about-process__video:active svg {
+  opacity: 0.3;
 }
 
 .about-process__text {
-  margin: 35px;
-  margin-bottom: 30px;
+  margin: 27px 33px;
+  margin-bottom: 25px;
   font-size: $font-size-xxs;
 }
 
 .about-process__button {
   display: block;
   width: 192px;
-  margin: 0 auto 33px;
+  margin: 0 auto 32px;
+  padding-bottom: 13px;
 }
 
 @media (min-width: $tablet-width) {
@@ -35,26 +75,49 @@
 
   .about-process__title {
     order: 2;
-    margin: 40px;
-    padding: 0 110px;
+    max-width: 100%;
+    margin: 39px;
+    margin-bottom: 32px;
+    padding: 0 66px;
     font-size: $font-size-l;
+  }
+
+  .about-process__title svg {
+    top: -6px;
+    left: 1px;
   }
 
   .about-process__video {
     order: 1;
+    height: 454px;
+  }
+
+  .about-process__video img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .about-process__video svg {
+    top: 41.6%;
+  }
+
+  .about-process__video:hover svg {
+    top: 39.6%;
   }
 
   .about-process__text {
     order: 3;
     margin: 40px;
     margin-top: 0;
+    margin-bottom: 35px;
     font-size: $font-size-xs;
     line-height: $font-size-xs + 15;
   }
 
   .about-process__button {
     order: 4;
-    width: 584px;
+    width: calc(100% - 82px);
     margin-bottom: 45px;
   }
 }
@@ -68,8 +131,13 @@
   .about-process__title {
     width: 369px;
     margin: 0;
-    margin-bottom: 35px;
-    padding: 100px 130px 0 80px;
+    margin-bottom: 33px;
+    padding: 97px 135px 0 77px;
+  }
+
+  .about-process__title svg {
+    top: 30%;
+    left: 21.3%;
   }
 
   .about-process__video {
@@ -80,11 +148,14 @@
   .about-process__text {
     width: 369px;
     margin: 0;
-    margin-bottom: 50px;
-    padding: 0 60px 0 80px;
+    margin-bottom: 46px;
+    padding: 0 60px 0 77px;
   }
 
   .about-process__button {
     width: 230px;
+    margin-right: 60px;
+    padding-top: 13px;
+    padding-bottom: 15px;
   }
 }

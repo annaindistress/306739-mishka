@@ -1,6 +1,13 @@
+.reviews {
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 103%;
+}
+
 .reviews__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   font-size: $font-size-xl - 2;
   line-height: $font-size-xl + 3;
   color: #000000;
@@ -14,7 +21,8 @@
 }
 
 .reviews__text {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
+  padding-left: 1px;
 }
 
 .reviews__author {
@@ -24,17 +32,22 @@
 
 .reviews__author-name {
   display: block;
+  margin-bottom: 3px;
+  padding-left: 2px;
   font-weight: 700;
   line-height: $font-size-s + 7;
   color: #000000;
 }
 
 .reviews__toggles {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .reviews__button {
   display: block;
+  width: calc(100% - 2px);
+  margin: 0 auto;
+  padding: 14px;
 }
 
 @media (min-width: $tablet-width) {
@@ -42,6 +55,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-image: url("../../img/review@1x.jpg"), url("../../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0, 10% 100%;
+    background-size: 351px 457px, 103%;
   }
 
   .reviews__title {
@@ -60,34 +77,50 @@
   }
 
   .reviews__text {
-    margin-bottom: 50px;
+    margin-bottom: 56px;
+    margin-left: 3px;
+  }
+
+  .reviews__author {
+    display: block;
+    margin-left: 2px;
   }
 
   .reviews__author-name {
+    margin-bottom: 4px;
     font-size: $font-size-s + 1;
   }
 
   .reviews__toggles {
     width: 175px;
-    margin-top: -80px;
-    margin-left: auto;
-    margin-bottom: 0;
+    margin: -83px 2px 0 auto;
   }
 
   .reviews__button {
     order: 2;
     width: 175px;
-    margin-bottom: 50px;
+    margin: 1px 5px 29px 0;
+    padding-top: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews__title {
+    margin-bottom: 32px;
     font-size: $font-size-xxxl;
     line-height: $font-size-xxxl + 4;
   }
 
   .reviews__text {
     max-width: 790px;
+    margin-bottom: 38px;
+  }
+
+  .reviews__toggles {
+    margin: -85px -89px 0 auto;
+  }
+
+  .reviews__button {
+    margin: 7px 0 29px 0;
   }
 }

@@ -1,19 +1,75 @@
 .advantages__title {
   margin: 0;
+  padding-left: 4px;
   font-size: $font-size-xl - 2;
   line-height: $font-size-xl + 3;
   color: #000000;
 }
 
 .advantages__list {
-  @include reset-list;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   font-weight: 700;
   line-height: $font-size-l;
   color: #000000;
 }
 
 .advantages__item {
-  padding-top: 75px;
+  position: relative;
+  padding-top: 83px;
+  padding-left: 5px;
+  background-repeat: no-repeat;
+
+  &--flower {
+    padding-top: 86px;
+  }
+
+  &--wool {
+    padding-left: 6px;
+  }
+
+  &--rocket {
+    padding-left: 6px;
+  }
+
+  &--gift {
+    padding-left: 6px;
+  }
+}
+
+.advantages__icon {
+  position: absolute;
+  top: 25%;
+  left: 3.4%;
+  display: block;
+
+  &--flower {
+    left: 5%;
+  }
+
+  &--money {
+    top: 24%;
+    left: 2.2%;
+  }
+
+  &--heart {
+    top: 28.1%;
+    left: 5%;
+  }
+
+  &--wool {
+    top: 26%;
+  }
+
+  &--rocket {
+    top: 27%;
+    left: 0%;
+  }
+}
+
+.advantages__icon path {
+  fill: $main-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,10 +87,12 @@
 
   .advantages__item {
     width: 50%;
-    padding-top: 100px;
+    padding-top: 111px;
+    padding-left: 8px;
 
     &--flower {
       order: 1;
+      padding-top: 103px;
     }
 
     &--money {
@@ -47,14 +105,48 @@
 
     &--wool {
       order: 2;
+      padding-top: 103px;
+      padding-left: 1px;
     }
 
     &--rocket {
       order: 4;
+      margin-left: -5px;
+      padding-left: 6px;
     }
 
     &--gift {
       order: 6;
+      padding-left: 1px;
+    }
+  }
+
+  .advantages__icon {
+    &--flower {
+      top: 32.9%;
+    }
+
+    &--money {
+      top: 37.5%;
+      left: 2.7%;
+    }
+
+    &--heart {
+      top: 40%;
+    }
+
+    &--wool {
+      top: 35%;
+      left: 1%;
+    }
+
+    &--rocket {
+      top: 39.5%;
+    }
+
+    &--gift {
+      top: 38%;
+      left: 1%;
     }
   }
 }
