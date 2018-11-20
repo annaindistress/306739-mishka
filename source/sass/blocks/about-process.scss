@@ -75,26 +75,49 @@
 
   .about-process__title {
     order: 2;
-    margin: 40px;
-    padding: 0 110px;
+    max-width: 100%;
+    margin: 39px;
+    margin-bottom: 32px;
+    padding: 0 66px;
     font-size: $font-size-l;
+  }
+
+  .about-process__title svg {
+    top: -6px;
+    left: 1px;
   }
 
   .about-process__video {
     order: 1;
+    height: 454px;
+  }
+
+  .about-process__video img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .about-process__video svg {
+    top: 41.6%;
+  }
+
+  .about-process__video:hover svg {
+    top: 39.6%;
   }
 
   .about-process__text {
     order: 3;
     margin: 40px;
     margin-top: 0;
+    margin-bottom: 35px;
     font-size: $font-size-xs;
     line-height: $font-size-xs + 15;
   }
 
   .about-process__button {
     order: 4;
-    width: 584px;
+    width: calc(100% - 82px);
     margin-bottom: 45px;
   }
 }
@@ -108,8 +131,13 @@
   .about-process__title {
     width: 369px;
     margin: 0;
-    margin-bottom: 35px;
-    padding: 100px 130px 0 80px;
+    margin-bottom: 33px;
+    padding: 97px 135px 0 77px;
+  }
+
+  .about-process__title svg {
+    top: 30%;
+    left: 21.3%;
   }
 
   .about-process__video {
@@ -120,11 +148,14 @@
   .about-process__text {
     width: 369px;
     margin: 0;
-    margin-bottom: 50px;
-    padding: 0 60px 0 80px;
+    margin-bottom: 46px;
+    padding: 0 60px 0 77px;
   }
 
   .about-process__button {
     width: 230px;
+    margin-right: 60px;
+    padding-top: 13px;
+    padding-bottom: 15px;
   }
 }
