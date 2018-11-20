@@ -24,16 +24,16 @@
 .contacts__mailto {
   padding-bottom: 4px;
   color: $secondary-color;
-  border-bottom: 1px solid $main-color-lightest;
+  border-bottom: 1px solid $main-color;
 
   &:hover {
-    color: $main-color-darkest;
-    border-bottom: 1px solid $main-color-darkest;
+    color: $main-color-dark;
+    border-bottom: 1px solid $main-color-dark;
   }
 
   &:active {
-    color: $main-color-darkest;
-    border-bottom: 1px solid $main-color-darkest;
+    color: $main-color-dark;
+    border-bottom: 1px solid $main-color-dark;
     opacity: 0.3;
   }
 }

@@ -1,7 +1,7 @@
 .fieldset {
   position: relative;
   border: none;
-  border-top: 1px solid $main-color-lightest;
+  border-top: 1px solid $main-color;
 }
 
 .fieldset__title {
@@ -11,7 +11,7 @@
   font-weight: 700;
   font-size: $font-size-s;
   line-height: 1;
-  color: $main-color-lightest;
+  color: $main-color;
   text-transform: uppercase;
   background-color: #ffffff;
 
@@ -68,7 +68,7 @@
   left: -50px;
   width: 16px;
   height: 16px;
-  background-color: $main-color-lightest;
+  background-color: $main-color;
   border-radius: 50%;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .fieldset__label:hover::before {
-  border-color: $main-color-lightest;
+  border-color: $main-color;
 }
 
 .fieldset__label:active::before {
@@ -167,11 +167,11 @@
 }
 
 .fieldset__input:hover {
-  border-color: $main-color-lightest;
+  border-color: $main-color;
 }
 
 .fieldset__input:active {
-  border-color: $main-color-lightest;
+  border-color: $main-color;
 
   &::placeholder {
     color: $secondary-color;
@@ -193,7 +193,7 @@
 
 .fieldset__input:hover ~ .fieldset__icon path,
 .fieldset__input:active ~ .fieldset__icon path {
-  fill: $main-color-lightest;
+  fill: $main-color;
 }
 
 @media (min-width: $tablet-width) {

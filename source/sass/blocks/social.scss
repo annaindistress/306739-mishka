@@ -27,12 +27,12 @@
 }
 
 .social__link:hover .social__link-image path {
-  fill: $main-color-darkest;
+  fill: $main-color-dark;
 }
 
 .social__link:active .social__link-image path {
   opacity: 0.3;
-  fill: $main-color-darkest;
+  fill: $main-color-dark;
 }
 
 @media (min-width: $tablet-width) {

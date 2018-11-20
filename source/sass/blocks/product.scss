@@ -70,7 +70,7 @@
 }
 
 .product__buy-button:hover path {
-  fill: $main-color-lightest;
+  fill: $main-color;
 }
 
 .product__buy-button:active svg {
@@ -78,7 +78,7 @@
 }
 
 .product__buy-button:active path {
-  fill: $main-color-lightest;
+  fill: $main-color;
 }
 
 @media (min-width: $tablet-width) {
