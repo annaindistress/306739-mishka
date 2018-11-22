@@ -1,18 +1,20 @@
 .contacts__title {
-  margin: -5px 30px 23px 28px;
+  margin: -5px 30px 25px 28px;
   font-size: $font-size-s + 1;
   line-height: $font-size-s + 13;
   color: #000000;
 }
 
 .contacts__info {
-  margin: 0 29px 8px 26px;
+  width: calc(100% - 56px);
+  margin: 0 29px 8px 27px;
+  border-collapse: collapse;
   font-size: $font-size-xs;
   line-height: $font-size-xs + 15;
 }
 
 .contacts__table-cell {
-  padding-bottom: 27px;
+  padding-bottom: 29px;
   vertical-align: top;
 
   &--legend {
@@ -50,7 +52,6 @@
 }
 
 .contacts__button {
-  display: block;
   width: calc(100% - 60px);
   margin: 0 auto;
   padding-top: 13px;
@@ -64,13 +65,13 @@
   }
 
   .contacts__title {
-    margin: 0 50px 44px 45px;
+    margin: 0 50px 48px 45px;
     font-size: $font-size-xxl;
     line-height: $font-size-xxl + 7;
   }
 
   .contacts__info {
-    width: calc(100% - 100px);
+    width: calc(100% - 90px);
     margin: 0 45px;
     font-size: $font-size-s;
   }
@@ -84,7 +85,7 @@
   }
 
   .contacts__table-cell {
-    padding-bottom: 52px;
+    padding-bottom: 55px;
 
     &--legend {
       width: 25.5%;
@@ -114,7 +115,7 @@
   }
 
   .contacts__title {
-    margin: 81px 0 43px;
+    margin: 81px 0 48px;
     font-size: $font-size-xxxl;
     line-height: $font-size-xxxl + 4;
   }
@@ -134,7 +135,7 @@
   }
 
   .contacts__table-cell {
-    padding-bottom: 26px;
+    padding-bottom: 29px;
   }
 
   .contacts__map {

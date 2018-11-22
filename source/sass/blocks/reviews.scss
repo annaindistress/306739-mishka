@@ -2,7 +2,7 @@
   background-image: url("../../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: 0 100%;
-  background-size: 103%;
+  background-size: 105%;
 }
 
 .reviews__title {
@@ -44,7 +44,6 @@
 }
 
 .reviews__button {
-  display: block;
   width: calc(100% - 2px);
   margin: 0 auto;
   padding: 14px;
@@ -59,6 +58,10 @@
     background-repeat: no-repeat;
     background-position: 0 0, 10% 100%;
     background-size: 351px 457px, 103%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/review@2x.jpg"), url("../../img/bg-zigzag-line.svg");
+    }
   }
 
   .reviews__title {
