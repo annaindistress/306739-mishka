@@ -10,27 +10,19 @@
   border-bottom: 1px solid transparentize($secondary-color, 0.9);
 
   &--logo {
-    padding: 22px;
-    padding-right: 24px;
+    padding: 22px 24px 16px 22px;
   }
 
-  &--new {
-    display: none;
-  }
-
-  &--sale {
-    display: none;
-  }
-
+  &--new,
+  &--sale,
   &--delivery {
     display: none;
   }
 }
 
-.main-navigation__logo-link {
+.main-navigation__logo {
   display: block;
-  width: 85px;
-  height: 35px;
+  width: 86px;
   margin: 0 auto;
 
   &:hover {
@@ -42,8 +34,8 @@
   }
 }
 
-.main-navigation__logo-link svg {
-  width: 85px;
+.main-navigation__logo img {
+  width: 86px;
   height: 35px;
 }
 
@@ -56,6 +48,7 @@
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
+  cursor: pointer;
 }
 
 .main-navigation--closed .main-navigation__toggle {
@@ -67,10 +60,15 @@
   background-image: url("../../img/icon-menu-close.svg");
 }
 
+.main-navigation__toggle:hover {
+  opacity: 0.6;
+}
+
+.main-navigation__toggle:active {
+  opacity: 0.3;
+}
+
 .main-navigation__link {
-  display: block;
-  width: 100%;
-  height: 100%;
   padding-left: 17.5%;
   font-weight: 700;
   color: #000000;
@@ -124,14 +122,8 @@
   .main-navigation--opened .main-navigation__item {
     display: block;
 
-    &--new {
-      display: none;
-    }
-
-    &--sale {
-      display: none;
-    }
-
+    &--new,
+    &--sale,
     &--delivery {
       display: none;
     }
@@ -140,14 +132,8 @@
   .main-navigation--nojs .main-navigation__item {
     display: block;
 
-    &--new {
-      display: none;
-    }
-
-    &--sale {
-      display: none;
-    }
-
+    &--new,
+    &--sale,
     &--delivery {
       display: none;
     }
@@ -166,9 +152,7 @@
   }
 
   .main-navigation__item {
-    padding: 0;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding: 17px 0 14px;
 
     &--logo {
       flex-grow: 1;
@@ -202,9 +186,7 @@
     &--cart {
       order: 3;
       width: 315px;
-      padding-top: 31px;
-      padding-bottom: 33px;
-      padding-left: 83px;
+      padding: 31px 0 33px 83px;
     }
 
     &--delivery {
@@ -219,12 +201,12 @@
     }
   }
 
-  .main-navigation__logo-link {
-    margin-right: auto;
-    margin-left: 49px;
+  .main-navigation__logo {
+    width: 113px;
+    margin: 5px auto 0 48px;
   }
 
-  .main-navigation__logo-link svg {
+  .main-navigation__logo img {
     width: 113px;
     height: 46px;
   }
@@ -253,24 +235,18 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-navigation__logo-link svg {
-    width: 149px;
-    height: 72px;
-  }
-
   .main-navigation__item {
+    padding: 31px 0 2px 50px;
+
     &--logo {
       order: 3;
       width: 277px;
-      padding-top: 6px;
-      padding-bottom: 28px;
+      margin-top: -1px;
     }
 
     &--catalog {
       order: 1;
       width: 235px;
-      padding-top: 31px;
-      padding-right: 0;
       font-size: $font-size-s;
       border-bottom: 1px solid transparentize($secondary-color, 0.9);
     }
@@ -278,21 +254,20 @@
     &--order {
       order: 2;
       width: 235px;
-      padding-top: 31px;
-      padding-left: 35px;
+      padding-left: 34px;
       font-size: $font-size-s;
       border-bottom: 1px solid transparentize($secondary-color, 0.9);
     }
 
     &--search {
       order: 4;
-      width: 86px;
-      margin-left: auto;
+      width: 83px;
     }
 
     &--cart {
       order: 5;
-      padding-left: 82px;
+      width: 316px;
+      padding-left: 83px;
     }
 
     &--new {
@@ -300,7 +275,6 @@
       order: 6;
       width: 235px;
       padding-top: 16px;
-      padding-left: 50px;
       font-size: $font-size-xs;
       border: none;
     }
@@ -309,13 +283,41 @@
       display: inline-block;
       order: 7;
       width: 235px;
-      padding-left: 34px;
+      padding-top: 16px;
+      padding-left: 35px;
       font-size: $font-size-xs;
       border: none;
     }
 
     &--delivery {
       order: 8;
+      padding-top: 16px;
+      padding-right: 50px;
     }
+  }
+
+  .main-navigation__icon {
+    top: 36px;
+    left: 40%;
+
+    &--cart {
+      top: 34px;
+      left: 10.5%;
+    }
+  }
+
+  .main-navigation__logo {
+    width: 149px;
+    margin-top: -22px;
+    margin-left: -20px;
+  }
+
+  .main-navigation__logo img {
+    width: 149px;
+    height: 72px;
+  }
+
+  .main-navigation__link {
+    padding-left: 0;
   }
 }

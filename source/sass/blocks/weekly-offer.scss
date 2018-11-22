@@ -2,7 +2,7 @@
   background-image: url("../../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: 0 100%;
-  background-size: 103%;
+  background-size: 105%;
 }
 
 .weekly-offer__title {
@@ -62,8 +62,8 @@
 }
 
 .weekly-offer__button {
-  width: calc(100% - 4px);
-  margin: 0 auto;
+  width: calc(100% - 5px);
+  margin-left: 2px;
   padding-bottom: 13px;
 }
 
