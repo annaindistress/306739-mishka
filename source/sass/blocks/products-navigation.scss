@@ -79,7 +79,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -8%;
+      bottom: -11%; //ттт
       left: 0;
       z-index: 10;
       display: block;
@@ -109,6 +109,10 @@
 @media (min-width: $desktop-width) {
   .products-navigation__link {
     padding: 30px 36px 27px;
+
+    &::after {
+      bottom: -8%;
+    }
   }
 
   .products-navigation__icon {
