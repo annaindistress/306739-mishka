@@ -13,3 +13,46 @@ navToggle.addEventListener('click', function () {
     navMain.classList.add('main-navigation--closed');
   }
 });
+
+var modalPopup = document.querySelector('.modal');
+var modalOverlay = document.querySelector('.page__modal-overlay');
+
+var openPopup = function () {
+  if (modalPopup.classList.contains('modal--closed')) {
+    modalPopup.classList.remove('modal--closed');
+    modalOverlay.classList.remove('page__modal-overlay--closed');
+
+    document.addEventListener('keydown', function(evt) {
+      if (evt.keyCode === 27) {
+        modalPopup.classList.add('modal--closed');
+        modalOverlay.classList.add('page__modal-overlay--closed');
+      }
+    });
+  }
+}
+
+var page = document.querySelector('.page');
+
+if (page.classList.contains('page--index')) {
+  var indexOpenButton = document.querySelector('.weekly-offer__button');
+
+  indexOpenButton.addEventListener('click', openPopup);
+
+  indexOpenButton.addEventListener('keydown', function(evt) {
+    if (evt.keyCode === 13) {
+      evt.preventDefault();
+      openPopup();
+    }
+  });
+} else {
+  var catalogOpenButton = document.querySelector('.product__buy-button')
+
+  catalogOpenButton.addEventListener('click', openPopup);
+
+  catalogOpenButton.addEventListener('keydown', function(evt) {
+    if (evt.keyCode === 13) {
+      evt.preventDefault();
+      openPopup();
+    }
+  });
+}

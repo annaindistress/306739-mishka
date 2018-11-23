@@ -2,6 +2,14 @@
   border: 1px solid transparentize($secondary-color, 0.9);
 }
 
+.about-process:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.about-process:active {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 .about-process__title {
   position: relative;
   max-width: 300px;

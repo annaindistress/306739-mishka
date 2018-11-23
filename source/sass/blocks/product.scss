@@ -4,6 +4,14 @@
   border: 1px solid transparentize($secondary-color, 0.9);
 }
 
+.product:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.product:active {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 .product__link {
   order: 2;
 }
