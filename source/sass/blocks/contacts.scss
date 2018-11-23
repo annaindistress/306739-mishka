@@ -49,6 +49,7 @@
   height: 457px;
   margin-bottom: 33px;
   background-color: $bg-color;
+  border: none;
 }
 
 .contacts__button {
@@ -59,7 +60,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    background-image: url("../../img/icon-flag.svg");
+    background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
     background-position: 92.6% 5.3%;
   }

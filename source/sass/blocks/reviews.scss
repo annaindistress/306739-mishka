@@ -1,5 +1,5 @@
 .reviews {
-  background-image: url("../../img/bg-zigzag-line.svg");
+  background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: 0 100%;
   background-size: 105%;
@@ -54,13 +54,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-image: url("../../img/review@1x.jpg"), url("../../img/bg-zigzag-line.svg");
+    background-image: url("../img/review@1x.jpg"), url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
     background-position: 0 0, 10% 100%;
     background-size: 351px 457px, 103%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/review@2x.jpg"), url("../../img/bg-zigzag-line.svg");
+      background-image: url("../img/review@2x.jpg"), url("../img/bg-zigzag-line.svg");
     }
   }
 
