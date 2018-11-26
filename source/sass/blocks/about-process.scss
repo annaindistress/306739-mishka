@@ -33,15 +33,13 @@
 .about-process__video {
   position: relative;
   width: 100%;
-  height: 150px;
   background-color: $bg-color;
   cursor: pointer;
 }
 
 .about-process__video img {
   display: block;
-  width: 259px;
-  height: 150px;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -100,7 +98,7 @@
   }
 
   .about-process__video img {
-    width: 100%;
+    width: auto;
     height: 100%;
     margin: 0 auto;
   }
