@@ -49,11 +49,11 @@
   fill: transparentize($main-color-dark-icons, 0.5);
 }
 
-.products-navigation__link:hover .products-navigation__icon path {
+.products-navigation__link:hover .products-navigation__icon {
   fill: transparentize($main-color-dark-icons, 0.3);
 }
 
-.products-navigation__link:active .products-navigation__icon path {
+.products-navigation__link:active .products-navigation__icon {
   fill: transparentize($main-color-dark-icons, 0.7);
 }
 
