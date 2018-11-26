@@ -49,7 +49,15 @@
   height: 457px;
   margin-bottom: 33px;
   background-color: $bg-color;
+  background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 54.5% 40.5%, 50% 50%;
+  background-size: 67px auto, 100% auto;
   border: none;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@2x.jpg");
+  }
 }
 
 .contacts__button {
@@ -100,6 +108,12 @@
 
   .contacts__map {
     margin-bottom: 49px;
+    background-image: url("../img/icon-map-pin.svg"), url("../img/map-tablet@1x.jpg");
+    background-position: 51.8% 39.4%,50% 50%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/icon-map-pin.svg"), url("../img/map-tablet@2x.jpg");
+    }
   }
 
   .contacts__button {
@@ -144,6 +158,12 @@
     top: 71px;
     right: 2px;
     width: 50%;
+    background-image: url("../img/icon-map-pin.svg"), url("../img/map-desktop@1x.jpg");
+    background-position: 52.3% 41.3%,50% 50%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/icon-map-pin.svg"), url("../img/map-desktop@2x.jpg");
+    }
   }
 
   .contacts__button {

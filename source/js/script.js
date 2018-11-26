@@ -36,7 +36,10 @@ var page = document.querySelector('.page');
 if (page.classList.contains('page--index')) {
   var indexOpenButton = document.querySelector('.weekly-offer__button');
 
-  indexOpenButton.addEventListener('click', openPopup);
+  indexOpenButton.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    openPopup();
+  });
 
   indexOpenButton.addEventListener('keydown', function(evt) {
     if (evt.keyCode === 13) {
@@ -45,14 +48,19 @@ if (page.classList.contains('page--index')) {
     }
   });
 } else {
-  var catalogOpenButton = document.querySelector('.product__buy-button')
+  var catalogOpenButtons = document.querySelectorAll('.product__buy-button');
 
-  catalogOpenButton.addEventListener('click', openPopup);
-
-  catalogOpenButton.addEventListener('keydown', function(evt) {
-    if (evt.keyCode === 13) {
+  for (var i = 0; i < catalogOpenButtons.length; i++) {
+    catalogOpenButtons[i].addEventListener('click', function(evt) {
       evt.preventDefault();
       openPopup();
-    }
-  });
+    });
+
+    catalogOpenButtons[i].addEventListener('keydown', function(evt) {
+      if (evt.keyCode === 13) {
+        evt.preventDefault();
+        openPopup();
+      }
+    });
+  }
 }
