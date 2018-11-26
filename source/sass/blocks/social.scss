@@ -6,6 +6,7 @@
 .social__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 146px;
   margin: 0 auto;
   padding: 0;
@@ -13,8 +14,13 @@
   list-style: none;
 }
 
+.social__item {
+  width: 33%;
+}
+
 .social__link {
   display: block;
+  width: 100%;
 
   &--instagram {
     padding-top: 5px;
