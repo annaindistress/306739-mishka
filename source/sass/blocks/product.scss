@@ -90,12 +90,14 @@
 
 @media (min-width: $tablet-width) {
   .product {
+    position: relative;
     flex-wrap: wrap;
-    height: 334px;
+    min-height: 334px;
   }
 
   .product__link {
     width: 50%;
+    margin-left: 50%;
   }
 
   .product__title {
@@ -106,24 +108,21 @@
 
   .product__about {
     width: 50%;
-    max-height: 160px;
-    overflow: scroll;
-    font-size: $font-size-xs;
+    margin-left: 50%;
   }
 
   .product__image-link {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 50%;
-    margin-bottom: 0;
-  }
-
-  .product__image {
-    width: auto;
     height: 100%;
+    margin-bottom: 0;
   }
 
   .product__price {
     margin: auto 32px -1px;
-    margin-top: auto;
+    margin-left: calc(50% + 32px);
     padding-top: 22px;
     font-size: $font-size-s;
   }
@@ -137,6 +136,7 @@
 
   .product__link {
     width: 100%;
+    margin-left: 0;
   }
 
   .product__title {
@@ -146,10 +146,12 @@
   .product__about {
     width: 100%;
     max-height: 100%;
+    margin-left: 0;
     padding: 0 24px;
   }
 
   .product__image-link {
+    position: relative;
     width: 100%;
     height: 462px;
   }

@@ -29,6 +29,7 @@
   }
 
   &:hover {
+    min-height: calc(100% + 5px);
     transform: translateY(-5px);
   }
 
