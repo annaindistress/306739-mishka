@@ -16,6 +16,7 @@
     "gulp-rename": "^1.4.x",
     "gulp-sass": "4.0.x",
     "gulp-svgstore": "^7.0.x",
+    "gulp-uglify": "^3.0.1",
     "gulp-webp": "^3.0.x",
     "posthtml-include": "^1.2.x",
     "stylelint": "9.6.x",
