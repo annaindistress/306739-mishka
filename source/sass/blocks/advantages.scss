@@ -43,6 +43,7 @@
   top: 25%;
   left: 3.4%;
   display: block;
+  fill: $main-color;
 
   &--flower {
     left: 5%;
@@ -66,10 +67,6 @@
     top: 27%;
     left: 0%;
   }
-}
-
-.advantages__icon path {
-  fill: $main-color;
 }
 
 @media (min-width: $tablet-width) {

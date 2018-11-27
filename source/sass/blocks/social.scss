@@ -32,11 +32,11 @@
   }
 }
 
-.social__link:hover .social__link-image path {
+.social__link:hover .social__link-image {
   fill: $main-color-dark;
 }
 
-.social__link:active .social__link-image path {
+.social__link:active .social__link-image {
   opacity: 0.3;
   fill: $main-color-dark;
 }

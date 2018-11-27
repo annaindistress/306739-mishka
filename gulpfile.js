@@ -32,7 +32,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -72,7 +72,7 @@ gulp.task("compress", function () {
 });
 
 gulp.task('minify', function () {
-  return gulp.src("source/*.html")
+  return gulp.src("build/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });

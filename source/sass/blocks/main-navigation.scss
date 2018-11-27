@@ -96,17 +96,11 @@
 
 .main-navigation__link:hover + .main-navigation__icon {
   opacity: 1;
-}
-
-.main-navigation__link:hover + .main-navigation__icon path {
   fill: $main-color;
 }
 
 .main-navigation__link:active + .main-navigation__icon {
   opacity: 0.3;
-}
-
-.main-navigation__link:active + .main-navigation__icon path {
   fill: $main-color;
 }
 

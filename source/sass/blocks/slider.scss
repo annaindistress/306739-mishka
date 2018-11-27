@@ -21,15 +21,15 @@
   }
 }
 
-.slider__toggle-arrow polygon {
+.slider__toggle-arrow {
   fill: #000000;
 }
 
-.slider__toggle:hover .slider__toggle-arrow polygon {
+.slider__toggle:hover .slider__toggle-arrow {
   fill: transparentize(#000000, 0.4);
 }
 
-.slider__toggle:active .slider__toggle-arrow polygon {
+.slider__toggle:active .slider__toggle-arrow {
   fill: transparentize(#000000, 0.7);
 }
 

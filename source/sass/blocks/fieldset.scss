@@ -189,10 +189,6 @@
 .fieldset__input:hover ~ .fieldset__icon,
 .fieldset__input:active ~ .fieldset__icon {
   opacity: 1;
-}
-
-.fieldset__input:hover ~ .fieldset__icon path,
-.fieldset__input:active ~ .fieldset__icon path {
   fill: $main-color;
 }
 

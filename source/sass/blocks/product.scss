@@ -74,17 +74,11 @@
 
 .product__buy-button:hover svg {
   opacity: 1;
-}
-
-.product__buy-button:hover path {
   fill: $main-color;
 }
 
 .product__buy-button:active svg {
   opacity: 0.3;
-}
-
-.product__buy-button:active path {
   fill: $main-color;
 }
 
