@@ -6,7 +6,7 @@
 
 .main-navigation__item {
   position: relative;
-  padding: 26px 30px 28px;
+  padding: 0;
   border-bottom: 1px solid transparentize($secondary-color, 0.9);
 
   &--logo {
@@ -69,7 +69,11 @@
 }
 
 .main-navigation__link {
-  padding-left: 17.5%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 26px 30px 28px;
+  padding-left: 23.5%;
   font-weight: 700;
   color: #000000;
 
@@ -146,25 +150,23 @@
   }
 
   .main-navigation__item {
-    padding: 17px 0 14px;
 
     &--logo {
       flex-grow: 1;
       order: 1;
       width: 48%;
+      padding: 17px 0 12px 0;
     }
 
     &--catalog {
       order: 4;
       width: 200px;
-      padding-left: 49px;
       font-size: $font-size-xs;
       border: none;
     }
 
     &--order {
       order: 5;
-      padding-left: 17px;
       font-size: $font-size-xs;
       border: none;
     }
@@ -180,13 +182,13 @@
     &--cart {
       order: 3;
       width: 315px;
-      padding: 31px 0 33px 83px;
     }
 
     &--delivery {
       display: inline-block;
       flex-grow: 1;
       order: 6;
+      padding-top: 17px;
       padding-right: 50px;
       font-size: $font-size-xs;
       text-align: right;
@@ -210,7 +212,19 @@
   }
 
   .main-navigation__link {
-    padding-left: 0;
+    padding: 17px 0 14px;
+
+    &--catalog {
+      padding-left: 49px;
+    }
+
+    &--order {
+      padding-left: 17px;
+    }
+
+    &--cart {
+      padding: 31px 0 33px 83px;
+    }
   }
 
   .main-navigation__icon {
@@ -230,8 +244,6 @@
 
 @media (min-width: $desktop-width) {
   .main-navigation__item {
-    padding: 31px 0 2px 50px;
-
     &--logo {
       order: 3;
       width: 277px;
@@ -248,7 +260,6 @@
     &--order {
       order: 2;
       width: 235px;
-      padding-left: 34px;
       font-size: $font-size-s;
       border-bottom: 1px solid transparentize($secondary-color, 0.9);
     }
@@ -261,14 +272,12 @@
     &--cart {
       order: 5;
       width: 316px;
-      padding-left: 83px;
     }
 
     &--new {
       display: inline-block;
       order: 6;
       width: 235px;
-      padding-top: 16px;
       font-size: $font-size-xs;
       border: none;
     }
@@ -277,8 +286,6 @@
       display: inline-block;
       order: 7;
       width: 235px;
-      padding-top: 16px;
-      padding-left: 35px;
       font-size: $font-size-xs;
       border: none;
     }
@@ -302,8 +309,9 @@
 
   .main-navigation__logo {
     width: 149px;
-    margin-top: -22px;
-    margin-left: -20px;
+    margin-top: -7px;
+    margin-left: 30px;
+    margin-bottom: -11px;
   }
 
   .main-navigation__logo img {
@@ -312,6 +320,23 @@
   }
 
   .main-navigation__link {
-    padding-left: 0;
+    padding: 31px 0 2px 50px;
+
+    &--order {
+      padding-left: 34px;
+    }
+
+    &--cart {
+      padding-left: 83px;
+    }
+
+    &--new {
+      padding-top: 16px;
+    }
+
+    &--sale {
+      padding-top: 16px;
+      padding-left: 35px;
+    }
   }
 }

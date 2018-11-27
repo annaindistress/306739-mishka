@@ -181,7 +181,7 @@
 
 .fieldset__icon {
   position: absolute;
-  top: 33px;
+  top: 38%;
   right: 6px;
   opacity: 0.2;
 }
@@ -302,6 +302,10 @@
     &--text {
       width: 100%;
       margin-left: 0;
+    }
+
+    &--additional-requests {
+      overflow: auto;
     }
   }
 
